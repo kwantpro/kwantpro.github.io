@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KwantPro – Zaawansowane Oprogramowanie Analityki Sportowej</title>
-    <meta name="description" content="KwantSystem to profesjonalny system analityczny do przetwarzania danych sportowych, optymalizacji parametrów i generowania precyzyjnych statystyk.">
+    <title>Kwant System Pro – System Wspomagania Decyzji Predykcyjnej w Sporcie</title>
+    <meta name="description" content="Kwant System Pro to desktopowe oprogramowanie do analizy danych statystycznych, badań nad efektywnością rynkową oraz kalkulacji numerycznych w sporcie.">
     
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,17 +34,21 @@
     <!-- Nawigacja -->
     <nav class="border-b border-gray-800 bg-brand-dark/80 backdrop-blur-md fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <i data-lucide="activity" class="w-8 h-8 text-brand-accent"></i>
+            <a href="#" class="flex items-center space-x-2 group">
+                <i data-lucide="activity" class="w-8 h-8 text-brand-accent group-hover:scale-110 transition-transform"></i>
                 <span class="text-2xl font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
-                    KWANT<span class="text-brand-accent">PRO</span>
+                    KWANT SYSTEM <span class="text-brand-accent">PRO</span>
                 </span>
-            </div>
+            </a>
+            
             <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#" class="hover:text-brand-accent transition-colors">Start</a>
+                <a href="#dyscypliny" class="hover:text-brand-accent transition-colors">Dyscypliny</a>
                 <a href="#funkcje" class="hover:text-brand-accent transition-colors">Możliwości</a>
-                <a href="#technologia" class="hover:text-brand-accent transition-colors">Technologia</a>
+                <a href="#autonomia" class="hover:text-brand-accent transition-colors">Autonomia danych</a>
                 <a href="#cennik" class="hover:text-brand-accent transition-colors">Licencja</a>
             </div>
+            
             <div>
                 <a href="#cennik" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2 rounded-lg font-semibold text-sm transition-all shadow-lg shadow-brand-accent/20">
                     Zamów program
@@ -54,62 +58,152 @@
     </nav>
 
     <!-- Sekcja Główna (Hero) -->
-    <section class="pt-36 pb-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center relative overflow-hidden">
+    <section class="pt-36 pb-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center relative overflow-hidden">
         <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.brand.accent/10%),transparent)]"></div>
         
         <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-accent/30 bg-brand-accent/10 text-brand-accent text-xs font-semibold tracking-wide uppercase mb-6">
-            <i data-lucide="cpu" class="w-3.5 h-3.5"></i> Nowa generacja algorytmów analitycznych
+            <i data-lucide="monitor" class="w-3.5 h-3.5"></i> Desktopowe Oprogramowanie Analityczne
         </span>
 
         <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight">
-            Zaawansowana analityka sportowa nowej <span class="text-brand-accent">ery</span>
+            System wspomagania decyzji predykcyjnej <span class="text-brand-accent">w zdarzeniach sportowych</span>
         </h1>
         
-        <p class="text-lg sm:text-xl text-brand-muted max-w-2xl mx-auto mb-10">
-            KwantPro to dedykowane oprogramowanie analityczne stworzone do głębokiego przetwarzania danych, modelowania statystycznego i precyzyjnej oceny wskaźników wydajnościowych.
+        <p class="text-lg sm:text-xl text-brand-muted max-w-3xl mx-auto mb-10 leading-relaxed">
+            <strong>Kwant System Pro</strong> to dedykowana aplikacja desktopowa do analizy danych statystycznych, badań nad efektywnością rynkową oraz złożonych kalkulacji numerycznych dla 7 kluczowych dyscyplin sportowych.
         </p>
 
         <div class="flex flex-col sm:flex-row justify-center gap-4">
             <a href="#cennik" class="bg-brand-accent hover:bg-brand-accentHover text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl shadow-brand-accent/25 transition-all flex items-center justify-center gap-2">
-                Pobierz KwantPro <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                Pobierz Kwant System Pro <i data-lucide="arrow-right" class="w-5 h-5"></i>
             </a>
-            <a href="#funkcje" class="bg-brand-card hover:bg-gray-800 border border-gray-700 font-semibold px-8 py-4 rounded-xl text-lg transition-all flex items-center justify-center">
+            <a href="#dyscypliny" class="bg-brand-card hover:bg-gray-800 border border-gray-700 font-semibold px-8 py-4 rounded-xl text-lg transition-all flex items-center justify-center">
                 Poznaj specyfikację
             </a>
         </div>
     </section>
 
-    <!-- Funkcje / Moduły -->
-    <section id="funkcje" class="py-20 border-t border-gray-800 bg-brand-dark/50">
+    <!-- Sekcja Obsługiwane Dyscypliny (7 dyscyplin) -->
+    <section id="dyscypliny" class="py-16 border-t border-gray-800 bg-brand-dark/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Obsługiwane dyscypliny sportowe</h2>
+                <p class="text-brand-muted mt-2">Dedykowane algorytmy kalkulacyjne dostosowane do specyfiki 7 kluczowych dyscyplin.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all">
+                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i data-lucide="trophy" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-1">Piłka Nożna</h3>
+                    <p class="text-xs text-brand-muted">Potencjał zespołów</p>
+                </div>
+
+                <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all">
+                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i data-lucide="zap" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-1">Hokej na lodzie</h3>
+                    <p class="text-xs text-brand-muted">Dynamika tercji</p>
+                </div>
+
+                <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all">
+                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i data-lucide="target" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-1">Piłka Ręczna</h3>
+                    <p class="text-xs text-brand-muted">Parametry bramkowe</p>
+                </div>
+
+                <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all">
+                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i data-lucide="dribbble" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-1">Koszykówka</h3>
+                    <p class="text-xs text-brand-muted">Efektywność punktowa</p>
+                </div>
+
+                <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all">
+                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i data-lucide="activity" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-1">Siatkówka</h3>
+                    <p class="text-xs text-brand-muted">Ciągi setowe</p>
+                </div>
+
+                <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all">
+                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i data-lucide="shield" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-1">Baseball</h3>
+                    <p class="text-xs text-brand-muted">Statystyki inningowe</p>
+                </div>
+
+                <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all col-span-2 lg:col-span-1">
+                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i data-lucide="flag" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-1">Rugby</h3>
+                    <p class="text-xs text-brand-muted">Modelowanie starć</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funkcje / Architektura -->
+    <section id="funkcje" class="py-20 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold">Architektura systemu</h2>
-                <p class="text-brand-muted mt-2">Zaprojektowane pod kątem maksymalnej wydajności obliczeniowej.</p>
+                <h2 class="text-3xl font-bold">Architektura i Narzędzia Analityczne</h2>
+                <p class="text-brand-muted mt-2">Kompletny zestaw funkcji wspomagających predykcję numeryczną.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800/80 hover:border-brand-accent/50 transition-all">
+                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all">
                     <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
-                        <i data-lucide="sliders" class="w-6 h-6"></i>
+                        <i data-lucide="calculator" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Modelowanie Danych</h3>
-                    <p class="text-brand-muted leading-relaxed">Elastyczne algorytmy przeliczające surowe bazy danych na czytelne wskaźniki analityczne.</p>
+                    <h3 class="text-xl font-bold mb-3">Kalkulacje Numeryczne</h3>
+                    <p class="text-brand-muted leading-relaxed">Szybkie przeliczanie złożonych modeli matematycznych na podstawie minimalnej ilości zmiennych wejściowych.</p>
                 </div>
 
-                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800/80 hover:border-brand-accent/50 transition-all">
+                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all">
                     <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
-                        <i data-lucide="database" class="w-6 h-6"></i>
+                        <i data-lucide="line-chart" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Lokalne Bezpieczeństwo</h3>
-                    <p class="text-brand-muted leading-relaxed">Wszystkie operacje i bazy danych pozostają wyłącznie na Twoim urządzeniu. Pełna poufność.</p>
+                    <h3 class="text-xl font-bold mb-3">Badanie Efektywności</h3>
+                    <p class="text-brand-muted leading-relaxed">Ocenianie wskaźników wydajnościowych oraz wykrywanie odchyleń statystycznych na wybranych rynkach.</p>
                 </div>
 
-                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800/80 hover:border-brand-accent/50 transition-all">
+                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all">
                     <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
-                        <i data-lucide="zap" class="w-6 h-6"></i>
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Szybkość Obliczeń</h3>
-                    <p class="text-brand-muted leading-relaxed">Zoptymalizowany silnik wykonujący złożone operacje statystyczne w ułamku sekundy.</p>
+                    <h3 class="text-xl font-bold mb-3">Aplikacja Desktopowa</h3>
+                    <p class="text-brand-muted leading-relaxed">Natywne oprogramowanie instalowane na urządzeniu. Brak zużycia pamięci przeglądarki i wysoka płynność.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Autonomia Danych -->
+    <section id="autonomia" class="py-20 border-t border-gray-800 bg-brand-dark/50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-16 h-16 bg-brand-accent/10 text-brand-accent rounded-2xl flex items-center justify-center shrink-0">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Autonomia danych i niezależność operacyjna</h3>
+                        <p class="text-brand-muted leading-relaxed mb-4">
+                            Kwant System Pro został zaprojektowany z myślą o pełnej suwerenności danych. Oprogramowanie nie wykorzystuje mechanizmów automatycznego pobierania treści rynkowych czy statystycznych z zewnętrznych sieci lub interfejsów API.
+                        </p>
+                        <p class="text-brand-muted leading-relaxed">
+                            Wprowadzanie informacji odbywa się wyłącznie samodzielnie lub za pomocą lokalnych plików wsadowych (format CSV). Taka architektura gwarantuje całkowitą odporność na przerwy w dostawie zewnętrznych usług, awarie serwerów, blokady sieciowe czy zmiany w protokołach dostawców danych.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,8 +212,8 @@
     <!-- Cennik / Subskrypcje -->
     <section id="cennik" class="py-20 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold mb-4">Warianty licencji KwantPro</h2>
-            <p class="text-brand-muted mb-12">Wybierz okres subskrypcji dopasowany do Twoich potrzeb.</p>
+            <h2 class="text-3xl font-bold mb-4">Warianty licencji analitycznej</h2>
+            <p class="text-brand-muted mb-12">Wybierz okres subskrypcji oprogramowania Kwant System Pro.</p>
 
             <div class="grid md:grid-cols-3 gap-8">
                 
@@ -133,8 +227,9 @@
                             <span class="text-brand-muted text-sm"> PLN / mies.</span>
                         </div>
                         <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik analityczny</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Bieżące aktualizacje</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik kalkulacyjny</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Obsługa 7 dyscyplin</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Import plików wsadowych CSV</li>
                         </ul>
                     </div>
                     <a href="https://platnosc.hotpay.pl/c/LINK_1MIES" target="_blank" class="block w-full bg-gray-800 hover:bg-brand-accent text-white font-bold py-3 rounded-xl text-sm transition-all text-center">
@@ -155,9 +250,10 @@
                             <span class="text-brand-muted text-sm"> PLN / kwartał</span>
                         </div>
                         <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik analityczny</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Bieżące aktualizacje</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Dokumentacja PDF</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik kalkulacyjny</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Obsługa 7 dyscyplin</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Import plików wsadowych CSV</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Priorytetowe wsparcie</li>
                         </ul>
                     </div>
                     <a href="https://platnosc.hotpay.pl/c/LINK_3MIES" target="_blank" class="block w-full bg-brand-accent hover:bg-brand-accentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-accent/20">
@@ -169,15 +265,16 @@
                 <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2">Licencja 6 Miesięcy</h3>
-                        <p class="text-brand-muted text-sm mb-6">Pełny dostęp półroczny</p>
+                        <p class="text-brand-muted text-sm mb-6">Dostęp półroczny</p>
                         <div class="my-6">
                             <span class="text-4xl font-black">[ WPISZ CENĘ ]</span>
                             <span class="text-brand-muted text-sm"> PLN / 6 mies.</span>
                         </div>
                         <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik analityczny</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Bieżące aktualizacje</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Dokumentacja PDF</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik kalkulacyjny</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Obsługa 7 dyscyplin</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Import plików wsadowych CSV</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Priorytetowe wsparcie</li>
                         </ul>
                     </div>
                     <a href="https://platnosc.hotpay.pl/c/LINK_6MIES" target="_blank" class="block w-full bg-gray-800 hover:bg-brand-accent text-white font-bold py-3 rounded-xl text-sm transition-all text-center">
@@ -192,7 +289,7 @@
     <!-- Stopka -->
     <footer class="border-t border-gray-800 py-8 bg-brand-dark text-xs text-brand-muted text-center">
         <div class="max-w-7xl mx-auto px-4">
-            <p>&copy; 2026 KwantPro. Wszelkie prawa zastrzeżone.</p>
+            <p>&copy; 2026 Kwant System Pro (kwantpro.pl). Wszelkie prawa zastrzeżone.</p>
         </div>
     </footer>
 
