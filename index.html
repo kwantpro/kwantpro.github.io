@@ -45,7 +45,8 @@
                 <a href="#" class="hover:text-brand-accent transition-colors">Start</a>
                 <a href="#dyscypliny" class="hover:text-brand-accent transition-colors">Dyscypliny</a>
                 <a href="#funkcje" class="hover:text-brand-accent transition-colors">Możliwości</a>
-                <a href="#autonomia" class="hover:text-brand-accent transition-colors">Autonomia danych</a>
+                <a href="#wymagania" class="hover:text-brand-accent transition-colors">Wymagania</a>
+                <a href="#autonomia" class="hover:text-brand-accent transition-colors">Autonomia</a>
                 <a href="#cennik" class="hover:text-brand-accent transition-colors">Licencja</a>
             </div>
             
@@ -180,15 +181,71 @@
                     <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
                         <i data-lucide="cpu" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Aplikacja Desktopowa</h3>
-                    <p class="text-brand-muted leading-relaxed">Natywne oprogramowanie instalowane na urządzeniu. Brak zużycia pamięci przeglądarki i wysoka płynność.</p>
+                    <h3 class="text-xl font-bold mb-3">Algorytm Adaptacyjny</h3>
+                    <p class="text-brand-muted leading-relaxed">Program posiada wbudowany model uczący się na bazie zaistniałych zdarzeń sportowych, optymalizujący precyzję prognoz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wymagania Systemowe i Techniczne -->
+    <section id="wymagania" class="py-20 border-t border-gray-800 bg-brand-dark/50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Wymagania Systemowe i Techniczne</h2>
+                <p class="text-brand-muted mt-2">Specyfikacja środowiska operacyjnego oraz warunki korzystania z oprogramowania.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Środowisko -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-gray-800">
+                    <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="settings" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Środowisko operacyjne</h3>
+                    <ul class="space-y-3 text-sm text-brand-muted">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="text-brand-accent w-4 h-4 mt-1 shrink-0"></i>
+                            <span><strong>System operacyjny:</strong> Microsoft Windows 7 SP1 / 8.1 / 10 / 11 (wyłącznie wersje 64-bitowe).</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="text-brand-accent w-4 h-4 mt-1 shrink-0"></i>
+                            <span><strong>Wymagania dla Windows 7:</strong> Wymagany Service Pack 1 (SP1) oraz odpowiednio zaktualizowane pakiety Microsoft Visual C++ Redistributable.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="text-brand-accent w-4 h-4 mt-1 shrink-0"></i>
+                            <span><strong>Eksport wyników:</strong> Możliwość zapisu danych w formatach TXT oraz PDF lub analiza na wykresach graficznych.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Licencja i Warunki -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-gray-800">
+                    <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="lock" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Warunki licencyjne i prawne</h3>
+                    <ul class="space-y-3 text-sm text-brand-muted">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="text-brand-accent w-4 h-4 mt-1 shrink-0"></i>
+                            <span><strong>Licencja:</strong> Charakter 1-stanowiskowy, przypisany ściśle do HWID komputera użytkownika.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="text-brand-accent w-4 h-4 mt-1 shrink-0"></i>
+                            <span><strong>Wiek użytkownika:</strong> Produkt przeznaczony wyłącznie dla osób pełnoletnich (18+).</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="text-brand-accent w-4 h-4 mt-1 shrink-0"></i>
+                            <span><strong>Charakter produktu:</strong> Oprogramowanie nie stanowi oferty gier hazardowych ani usług finansowych. Służy wyłącznie celom analitycznym.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sekcja Autonomia Danych -->
-    <section id="autonomia" class="py-20 border-t border-gray-800 bg-brand-dark/50">
+    <section id="autonomia" class="py-20 border-t border-gray-800">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 sm:p-12 relative overflow-hidden">
                 <div class="flex flex-col md:flex-row items-center gap-8">
@@ -198,10 +255,10 @@
                     <div>
                         <h3 class="text-2xl font-bold mb-4">Autonomia danych i niezależność operacyjna</h3>
                         <p class="text-brand-muted leading-relaxed mb-4">
-                            Kwant System Pro został zaprojektowany z myślą o pełnej suwerenności danych. Oprogramowanie nie wykorzystuje mechanizmów automatycznego pobierania treści rynkowych czy statystycznych z zewnętrznych sieci lub interfejsów API.
+                            Kwant System Pro został zaprojektowany z myślą o pełnej suwerenności danych. Oprogramowanie nie posiada mechanizmów automatycznego ściągania danych rynkowych, kursowych czy statystycznych z zewnętrznych API lub internetu.
                         </p>
                         <p class="text-brand-muted leading-relaxed">
-                            Wprowadzanie informacji odbywa się wyłącznie samodzielnie lub za pomocą lokalnych plików wsadowych (format CSV). Taka architektura gwarantuje całkowitą odporność na przerwy w dostawie zewnętrznych usług, awarie serwerów, blokady sieciowe czy zmiany w protokołach dostawców danych.
+                            Użytkownik wprowadza dane samodzielnie lub za pomocą plików wsadowych (CSV), co gwarantuje pełną autonomię, niezależność oraz odporność na kryzysy związane z przerwami w dostawie zewnętrznych usług danych, awariami serwerów zewnętrznych czy blokadami sieciowymi.
                         </p>
                     </div>
                 </div>
@@ -210,7 +267,7 @@
     </section>
 
     <!-- Cennik / Subskrypcje -->
-    <section id="cennik" class="py-20 border-t border-gray-800">
+    <section id="cennik" class="py-20 border-t border-gray-800 bg-brand-dark/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold mb-4">Warianty licencji analitycznej</h2>
             <p class="text-brand-muted mb-12">Wybierz okres subskrypcji oprogramowania Kwant System Pro.</p>
@@ -229,7 +286,7 @@
                         <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik kalkulacyjny</li>
                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Obsługa 7 dyscyplin</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Import plików wsadowych CSV</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
                         </ul>
                     </div>
                     <a href="https://platnosc.hotpay.pl/c/LINK_1MIES" target="_blank" class="block w-full bg-gray-800 hover:bg-brand-accent text-white font-bold py-3 rounded-xl text-sm transition-all text-center">
@@ -252,7 +309,7 @@
                         <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik kalkulacyjny</li>
                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Obsługa 7 dyscyplin</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Import plików wsadowych CSV</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Priorytetowe wsparcie</li>
                         </ul>
                     </div>
@@ -273,7 +330,7 @@
                         <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik kalkulacyjny</li>
                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Obsługa 7 dyscyplin</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Import plików wsadowych CSV</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Priorytetowe wsparcie</li>
                         </ul>
                     </div>
@@ -289,7 +346,7 @@
     <!-- Stopka -->
     <footer class="border-t border-gray-800 py-8 bg-brand-dark text-xs text-brand-muted text-center">
         <div class="max-w-7xl mx-auto px-4">
-            <p>&copy; 2026 Kwant System Pro (kwantpro.pl). Wszelkie prawa zastrzeżone.</p>
+            <p>&copy; 2026 Kwant System Pro (kwantpro.pl). Wszelkie prawa zastrzeżone. Produkt przeznaczony wyłącznie dla osób pełnoletnich (18+).</p>
         </div>
     </footer>
 
