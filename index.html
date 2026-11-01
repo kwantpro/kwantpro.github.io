@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KwantPro – Zaawansowane Oprogramowanie Analityki Sportowej</title>
+    <meta name="description" content="KwantSystem to profesjonalny system analityczny do przetwarzania danych sportowych, optymalizacji parametrów i generowania precyzyjnych statystyk.">
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0F17',
+                            card: '#161F30',
+                            accent: '#FF5500',
+                            accentHover: '#E04A00',
+                            text: '#F3F4F6',
+                            muted: '#9CA3AF'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Ikony Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-dark text-brand-text font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Nawigacja -->
+    <nav class="border-b border-gray-800 bg-brand-dark/80 backdrop-blur-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i data-lucide="activity" class="w-8 h-8 text-brand-accent"></i>
+                <span class="text-2xl font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+                    KWANT<span class="text-brand-accent">PRO</span>
+                </span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#funkcje" class="hover:text-brand-accent transition-colors">Możliwości</a>
+                <a href="#technologia" class="hover:text-brand-accent transition-colors">Technologia</a>
+                <a href="#cennik" class="hover:text-brand-accent transition-colors">Licencja</a>
+            </div>
+            <div>
+                <a href="#cennik" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2 rounded-lg font-semibold text-sm transition-all shadow-lg shadow-brand-accent/20">
+                    Zamów program
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sekcja Główna (Hero) -->
+    <section class="pt-36 pb-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center relative overflow-hidden">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.brand.accent/10%),transparent)]"></div>
+        
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-accent/30 bg-brand-accent/10 text-brand-accent text-xs font-semibold tracking-wide uppercase mb-6">
+            <i data-lucide="cpu" class="w-3.5 h-3.5"></i> Nowa generacja algorytmów analitycznych
+        </span>
+
+        <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight">
+            Zaawansowana analityka sportowa nowej <span class="text-brand-accent">ery</span>
+        </h1>
+        
+        <p class="text-lg sm:text-xl text-brand-muted max-w-2xl mx-auto mb-10">
+            KwantPro to dedykowane oprogramowanie analityczne stworzone do głębokiego przetwarzania danych, modelowania statystycznego i precyzyjnej oceny wskaźników wydajnościowych.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#cennik" class="bg-brand-accent hover:bg-brand-accentHover text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl shadow-brand-accent/25 transition-all flex items-center justify-center gap-2">
+                Pobierz KwantPro <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+            <a href="#funkcje" class="bg-brand-card hover:bg-gray-800 border border-gray-700 font-semibold px-8 py-4 rounded-xl text-lg transition-all flex items-center justify-center">
+                Poznaj specyfikację
+            </a>
+        </div>
+    </section>
+
+    <!-- Funkcje / Moduły -->
+    <section id="funkcje" class="py-20 border-t border-gray-800 bg-brand-dark/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Architektura systemu</h2>
+                <p class="text-brand-muted mt-2">Zaprojektowane pod kątem maksymalnej wydajności obliczeniowej.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800/80 hover:border-brand-accent/50 transition-all">
+                    <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="sliders" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Modelowanie Danych</h3>
+                    <p class="text-brand-muted leading-relaxed">Elastyczne algorytmy przeliczające surowe bazy danych na czytelne wskaźniki analityczne.</p>
+                </div>
+
+                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800/80 hover:border-brand-accent/50 transition-all">
+                    <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="database" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Lokalne Bezpieczeństwo</h3>
+                    <p class="text-brand-muted leading-relaxed">Wszystkie operacje i bazy danych pozostają wyłącznie na Twoim urządzeniu. Pełna poufność.</p>
+                </div>
+
+                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800/80 hover:border-brand-accent/50 transition-all">
+                    <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Szybkość Obliczeń</h3>
+                    <p class="text-brand-muted leading-relaxed">Zoptymalizowany silnik wykonujący złożone operacje statystyczne w ułamku sekundy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cennik / Subskrypcje -->
+    <section id="cennik" class="py-20 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Warianty licencji KwantPro</h2>
+            <p class="text-brand-muted mb-12">Wybierz okres subskrypcji dopasowany do Twoich potrzeb.</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Pakiet Miesięczny -->
+                <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Licencja 1 Miesiąc</h3>
+                        <p class="text-brand-muted text-sm mb-6">Elastyczny dostęp na 30 dni</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-black">[ WPISZ CENĘ ]</span>
+                            <span class="text-brand-muted text-sm"> PLN / mies.</span>
+                        </div>
+                        <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik analityczny</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Bieżące aktualizacje</li>
+                        </ul>
+                    </div>
+                    <a href="https://platnosc.hotpay.pl/c/LINK_1MIES" target="_blank" class="block w-full bg-gray-800 hover:bg-brand-accent text-white font-bold py-3 rounded-xl text-sm transition-all text-center">
+                        Wybierz 1 Miesiąc
+                    </a>
+                </div>
+
+                <!-- Pakiet 3-Miesięczny -->
+                <div class="bg-brand-card border-2 border-brand-accent rounded-3xl p-8 relative flex flex-col justify-between shadow-xl">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-accent text-white px-3 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Najczęściej wybierany
+                    </span>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Licencja 3 Miesiące</h3>
+                        <p class="text-brand-muted text-sm mb-6">Dostęp kwartalny</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-black">[ WPISZ CENĘ ]</span>
+                            <span class="text-brand-muted text-sm"> PLN / kwartał</span>
+                        </div>
+                        <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik analityczny</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Bieżące aktualizacje</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Dokumentacja PDF</li>
+                        </ul>
+                    </div>
+                    <a href="https://platnosc.hotpay.pl/c/LINK_3MIES" target="_blank" class="block w-full bg-brand-accent hover:bg-brand-accentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-accent/20">
+                        Wybierz 3 Miesiące
+                    </a>
+                </div>
+
+                <!-- Pakiet Półroczny -->
+                <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Licencja 6 Miesięcy</h3>
+                        <p class="text-brand-muted text-sm mb-6">Pełny dostęp półroczny</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-black">[ WPISZ CENĘ ]</span>
+                            <span class="text-brand-muted text-sm"> PLN / 6 mies.</span>
+                        </div>
+                        <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik analityczny</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Bieżące aktualizacje</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Dokumentacja PDF</li>
+                        </ul>
+                    </div>
+                    <a href="https://platnosc.hotpay.pl/c/LINK_6MIES" target="_blank" class="block w-full bg-gray-800 hover:bg-brand-accent text-white font-bold py-3 rounded-xl text-sm transition-all text-center">
+                        Wybierz 6 Miesięcy
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="border-t border-gray-800 py-8 bg-brand-dark text-xs text-brand-muted text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 KwantPro. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <!-- Inicjalizacja ikon -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
