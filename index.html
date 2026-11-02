@@ -31,11 +31,13 @@
 </head>
 <body class="bg-brand-dark text-brand-text font-sans antialiased selection:bg-brand-accent selection:text-white">
 
-    <!-- Nawigacja -->
+    <!-- Nawigacja z dodaną ikoną programu -->
     <nav class="border-b border-gray-800 bg-brand-dark/80 backdrop-blur-md fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="#" class="flex items-center space-x-2 group">
-                <i data-lucide="activity" class="w-8 h-8 text-brand-accent group-hover:scale-110 transition-transform"></i>
+            <a href="#" class="flex items-center space-x-3 group">
+                <!-- Ikona programu (logo.png) -->
+                <img src="logo.png" alt="Kwant System Pro Ikonka" class="w-9 h-9 group-hover:scale-110 transition-transform rounded-lg object-contain">
+                
                 <span class="text-2xl font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
                     KWANT SYSTEM <span class="text-brand-accent">PRO</span>
                 </span>
@@ -94,7 +96,6 @@
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
-                <!-- Piłka Nożna -->
                 <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
                     <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
                         <i data-lucide="circle-dot" class="w-5 h-5"></i>
@@ -102,7 +103,6 @@
                     <h3 class="font-bold text-base">Piłka Nożna</h3>
                 </div>
 
-                <!-- Hokej na lodzie -->
                 <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
                     <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
                         <i data-lucide="snowflake" class="w-5 h-5"></i>
@@ -110,7 +110,6 @@
                     <h3 class="font-bold text-base">Hokej na lodzie</h3>
                 </div>
 
-                <!-- Piłka Ręczna -->
                 <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
                     <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
                         <i data-lucide="target" class="w-5 h-5"></i>
@@ -118,7 +117,6 @@
                     <h3 class="font-bold text-base">Piłka Ręczna</h3>
                 </div>
 
-                <!-- Koszykówka -->
                 <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
                     <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
                         <i data-lucide="orbit" class="w-5 h-5"></i>
@@ -126,7 +124,6 @@
                     <h3 class="font-bold text-base">Koszykówka</h3>
                 </div>
 
-                <!-- Siatkówka -->
                 <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
                     <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
                         <i data-lucide="activity" class="w-5 h-5"></i>
@@ -134,7 +131,6 @@
                     <h3 class="font-bold text-base">Siatkówka</h3>
                 </div>
 
-                <!-- Baseball -->
                 <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
                     <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
                         <i data-lucide="shield" class="w-5 h-5"></i>
@@ -142,7 +138,6 @@
                     <h3 class="font-bold text-base">Baseball</h3>
                 </div>
 
-                <!-- Rugby -->
                 <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all col-span-2 lg:col-span-1 flex flex-col items-center justify-center">
                     <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
                         <i data-lucide="flag" class="w-5 h-5"></i>
@@ -161,13 +156,13 @@
                 <p class="text-brand-muted mt-2">Kompletny zestaw funkcji wspomagających predykcję numeryczną.</p>
             </div>
 
-            <!-- Prezentacja Panelu Programu -->
+            <!-- Prezentacja Panelu Programu (w motywie ciemnym) -->
             <div class="mb-16 max-w-4xl mx-auto">
                 <div class="bg-brand-card p-3 sm:p-5 rounded-3xl border border-gray-800 shadow-2xl">
-                    <!-- Zmień 'panel.jpg' na nazwę swojego pliku graficznego na GitHubie -->
-                    <img src="panel.jpg" alt="Panel główny Kwant System Pro" class="rounded-2xl w-full h-auto border border-gray-700">
+                    <!-- Upewnij się, że nazwa pliku zrzutu ekranu w katalogu to panel.png lub zmień ją tutaj -->
+                    <img src="panel.png" alt="Panel główny Kwant System Pro" class="rounded-2xl w-full h-auto border border-gray-700">
                     <p class="text-center text-xs sm:text-sm text-brand-muted mt-4">
-                        <strong>Panel główny programu:</strong> Wynik główny prognozy widoczny jest natychmiast na pulpicie, a pełny raport i wykresy sprawdzisz jednym kliknięciem w dedykowanej zakładce analitycznej.
+                        <strong>Panel główny programu (tryb ciemny):</strong> Wynik główny prognozy widoczny jest natychmiast na pulpicie, a pełny raport i wykresy sprawdzisz jednym kliknięciem w dedykowanej zakładce analitycznej.
                     </p>
                 </div>
             </div>
@@ -217,7 +212,6 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Środowisko -->
                 <div class="bg-brand-card p-8 rounded-3xl border border-gray-800">
                     <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
                         <i data-lucide="settings" class="w-6 h-6"></i>
@@ -239,7 +233,6 @@
                    </ul>
                 </div>
 
-                <!-- Licencja i Warunki -->
                 <div class="bg-brand-card p-8 rounded-3xl border border-gray-800">
                     <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
                         <i data-lucide="lock" class="w-6 h-6"></i>
@@ -294,7 +287,6 @@
 
             <div class="grid md:grid-cols-3 gap-8">
                 
-                <!-- Pakiet Miesięczny -->
                 <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2">Licencja 1 Miesiąc</h3>
@@ -309,13 +301,11 @@
                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
                         </ul>
                     </div>
-                    <!-- Przycisk wywołujący modal -->
                     <button onclick="openModal('https://platnosc.hotpay.pl/c/LINK_1MIES', 'Licencja 1 Miesiąc')" class="block w-full bg-gray-800 hover:bg-brand-accent text-white font-bold py-3 rounded-xl text-sm transition-all text-center cursor-pointer">
                         Wybierz 1 Miesiąc
                    </button>
                </div>
 
-                <!-- Pakiet 3-Miesięczny -->
                 <div class="bg-brand-card border-2 border-brand-accent rounded-3xl p-8 relative flex flex-col justify-between shadow-xl">
                     <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-accent text-white px-3 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider">
                         Najczęściej wybierany
@@ -333,13 +323,11 @@
                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
                         </ul>
                     </div>
-                    <!-- Przycisk wywołujący modal -->
                     <button onclick="openModal('https://platnosc.hotpay.pl/c/LINK_3MIES', 'Licencja 3 Miesiące')" class="block w-full bg-brand-accent hover:bg-brand-accentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-accent/20 cursor-pointer">
                         Wybierz 3 Miesiące
                    </button>
                </div>
 
-                <!-- Pakiet Półroczny -->
                 <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2">Licencja 6 Miesięcy</h3>
@@ -354,7 +342,6 @@
                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
                         </ul>
                     </div>
-                    <!-- Przycisk wywołujący modal -->
                     <button onclick="openModal('https://platnosc.hotpay.pl/c/LINK_6MIES', 'Licencja 6 Miesięcy')" class="block w-full bg-gray-800 hover:bg-brand-accent text-white font-bold py-3 rounded-xl text-sm transition-all text-center cursor-pointer">
                         Wybierz 6 Miesięcy
                    </button>
