@@ -161,6 +161,17 @@
                 <p class="text-brand-muted mt-2">Kompletny zestaw funkcji wspomagających predykcję numeryczną.</p>
             </div>
 
+            <!-- Prezentacja Panelu Programu -->
+            <div class="mb-16 max-w-4xl mx-auto">
+                <div class="bg-brand-card p-3 sm:p-5 rounded-3xl border border-gray-800 shadow-2xl">
+                    <!-- Zmień 'panel.png' na nazwę swojego pliku graficznego na GitHubie -->
+                    <img src="panel.png" alt="Panel główny Kwant System Pro" class="rounded-2xl w-full h-auto border border-gray-700">
+                    <p class="text-center text-xs sm:text-sm text-brand-muted mt-4">
+                        <strong>Panel główny programu:</strong> Wynik główny prognozy widoczny jest natychmiast na pulpicie, a pełny raport i wykresy sprawdzisz jednym kliknięciem w dedykowanej zakładce analitycznej.
+                    </p>
+                </div>
+            </div>
+
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all">
                     <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
@@ -355,14 +366,14 @@
 
     <!-- Modal Potwierdzenia Prawnego i Wiekowego -->
     <div id="legalModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
-        <div class="bg-brand-card border border-gray-700 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl animate-in fade-in zoom-in duration-200">
+        <div class="bg-brand-card border border-gray-700 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
             <div class="flex items-center gap-3 mb-4 text-brand-accent">
                 <i data-lucide="shield-alert" class="w-8 h-8 shrink-0"></i>
                 <h3 class="text-xl font-bold text-white">Oświadczenie i Warunki Zakupu</h3>
             </div>
             
             <p class="text-sm text-brand-muted mb-6 leading-relaxed">
-                Przed przejściem do płatności dla wybranego pakietu (<span id="modalPackageName" class="text-white font-semibold"></span>), musisz zapoznać się z poniższymi warunkami i potwierdzić swoje oświadczenia:
+                Przed przejściem do płatności dla wybranego pakietu (<span id="modalPackageName" class="text-white font-semibold"></span>), musisz zapoznać się z warunkami i potwierdzić swoje oświadczenia:
             </p>
 
             <div class="space-y-4 mb-6 text-sm text-brand-text">
@@ -373,7 +384,7 @@
 
                 <label class="flex items-start gap-3 cursor-pointer">
                     <input type="checkbox" id="checkDocs" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-accent focus:ring-brand-accent">
-                    <span>Zapoznałem się z <strong>Umową Licencyjną (EULA)</strong>, <strong>Regulaminem Sprzedaży</strong> oraz akceptuję warunki dostarczenia treści cyfrowych i brak prawa do odstąpienia od umowy po wygenerowaniu klucza HWID.</span>
+                    <span>Zapoznałem się z całą <a href="dokumentacja.html" target="_blank" class="text-brand-accent underline hover:text-white">Dokumentacją Prawną, Licencyjną i Podręcznikiem</a> oraz akceptuję warunki dostarczenia treści cyfrowych i brak prawa do odstąpienia od umowy po wygenerowaniu klucza HWID.</span>
                 </label>
             </div>
 
@@ -426,12 +437,10 @@
                 return;
             }
 
-            // Otwórz link płatności w nowej karcie i zamknij modal
             window.open(targetCheckoutUrl, '_blank');
             closeModal();
         }
 
-        // Inicjalizacja ikon Lucide
         lucide.createIcons();
     </script>
 </body>
