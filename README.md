@@ -1,11 +1,11 @@
-# KwantPro – Standalone Sports Analytics Software
+# CompaginisPredict – Standalone Sports Analytics Software
 
-Oficjalna strona internetowa oprogramowania **KwantSystem** – zaawansowanego systemu do lokalnej analityki i modelowania statystycznego w sporcie.
+Oficjalna strona internetowa oprogramowania **CompaginisPredict** – zaawansowanego systemu do lokalnej analityki i modelowania statystycznego w sporcie.
 
 ## O Projekcie
-KwantSystem to dedykowana aplikacja desktopowa przeznaczona do głębokiej analizy danych sportowych, kalkulacji wskaźników wydajnościowych oraz budowania autorskich modeli statystycznych.
+CompaginisPredict to dedykowana aplikacja desktopowa przeznaczona do głębokiej analizy danych sportowych, kalkulacji wskaźników wydajnościowych oraz budowania autorskich modeli statystycznych.
 
-- **Oficjalna strona:** [kwantpro.pl](https://kwantpro.pl)
+- **Oficjalna strona:** [compaginis.pl](https://compaginis.pl)
 - **Model dystrybucji:** Licencja czasowa (1, 3 lub 6 miesięcy)
 - **Bezpieczeństwo:** Pełna prywatność – baza danych i obliczenia przetwarzane wyłącznie lokalnie na urządzeniu użytkownika.
 
@@ -14,7 +14,7 @@ Strona docelowa (Landing Page) została zbudowana przy użyciu:
 - HTML5 / CSS3
 - Tailwind CSS
 - Lucide Icons
-- GitHub Pages + Custom Domain (`kwantpro.pl`)
+- GitHub Pages + Custom Domain (`compaginis.pl`)
 
 ---
-© 2026 KwantPro. Wszystkie prawa zastrzeżone.
+© 2026 compaginis. Wszystkie prawa zastrzeżone.
