@@ -1,0 +1,22 @@
+﻿All Rights Reserved Notice
+Copyright (c) 2026 Jaroslaw Wojtasik (Compaginis / Compaginis Predict)
+
+Wszelkie prawa zastrzeżone. 
+
+Niniejsze repozytorium zawiera wyłącznie publiczną dokumentację, materiały informacyjne 
+oraz stronę internetową dedykowaną oprogramowaniu desktopowemu "Compaginis Predict".
+
+1. Ochrona własności intelektualnej:
+Wszystkie elementy zawarte w tym repozytorium (w tym kody źródłowe strony HTML, CSS, 
+układ graficzny, logotypy, ikony, opisy oraz dokumentacja) stanowią wyłączną własność 
+autorską wydawcy: Jaroslaw Wojtasik. 
+
+2. Ograniczenia:
+Kopiowanie, modyfikowanie, dystrybucja, publiczne udostępnianie oraz komercyjne 
+wykorzystywanie jakichkolwiek elementów, grafik lub treści zawartych w tym repozytorium 
+bez wyraźnej, pisemnej zgody autora jest surowo zabronione.
+
+3. Oprogramowanie binarne:
+Samo repozytorium nie zawiera kodu źródłowego ani plików wykonywalnych aplikacji 
+"Compaginis Predict" (.exe), które stanowią niezależną, zamkniętą własność intelektualną 
+autora i podlegają odrębnym warunkom licencyjnym (EULA).
