@@ -1,9 +1,9 @@
 # CompaginisPredict – Standalone Sports Analytics Software
 
-Oficjalna strona internetowa oprogramowania **CompaginisPredict** – zaawansowanego systemu do lokalnej analityki i modelowania statystycznego w sporcie.
+Oficjalna strona internetowa oprogramowania **CompaginisPredict** – systemu do lokalnej analityki i modelowania statystycznego w sporcie.
 
 ## O Projekcie
-CompaginisPredict to dedykowana aplikacja desktopowa przeznaczona do głębokiej analizy danych sportowych, kalkulacji wskaźników wydajnościowych oraz budowania autorskich modeli statystycznych.
+CompaginisPredict to dedykowana aplikacja desktopowa przeznaczona do analizy danych sportowych.
 
 - **Oficjalna strona:** [compaginis.pl](https://compaginis.pl)
 - **Model dystrybucji:** Licencja czasowa (1, 3 lub 6 miesięcy)
