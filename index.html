@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compaginis Predict - program do analizowania i prognozowania rezultatów sportowych</title>
-    <meta name="description" content="Compaginis Predict to desktopowe oprogramowanie do analizy danych statystycznych oraz kalkulacji numerycznych w sporcie - system wspomagania predykcyjnego.">
+    <title>Compaginis - Oprogramowanie Analityczne i Trenerskie w Sporcie</title>
+    <meta name="description" content="Compaginis - oprogramowanie desktopowe do predykcji sportowej (Predict) oraz wsparcia sztabu szkoleniowego (Coach).">
     
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,6 +18,8 @@
                             card: '#161F30',
                             accent: '#FF5500',
                             accentHover: '#E04A00',
+                            coachAccent: '#38BDF8',
+                            coachAccentHover: '#0284C7',
                             text: '#F3F4F6',
                             muted: '#9CA3AF'
                         }
@@ -31,31 +33,28 @@
 </head>
 <body class="bg-brand-dark text-brand-text font-sans antialiased selection:bg-brand-accent selection:text-white">
 
-    <!-- Nawigacja (bez linii na dole) -->
-    <nav class="bg-brand-dark/80 backdrop-blur-md fixed w-full z-50">
+    <!-- Nawigacja główna -->
+    <nav class="bg-brand-dark/80 backdrop-blur-md fixed w-full z-50 border-b border-gray-800/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <a href="#" class="flex items-center space-x-3 group">
-                <!-- Ikona programu (logo.png) -->
-                <img src="logo.png" alt="Compaginis Predict Ikonka" class="w-9 h-9 group-hover:scale-110 transition-transform rounded-lg object-contain">
+                <img src="logo.png" alt="Compaginis Logo" class="w-9 h-9 group-hover:scale-110 transition-transform rounded-lg object-contain">
                 <span class="text-2xl font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
-                    COMPAGINIS <span class="text-brand-accent">PREDICT</span>
+                    COMPAGINIS
                 </span>
             </a>
             
             <div class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#" class="hover:text-brand-accent transition-colors">Start</a>
-                <a href="#dyscypliny" class="hover:text-brand-accent transition-colors">Dyscypliny</a>
-                <a href="#funkcje" class="hover:text-brand-accent transition-colors">Możliwości</a>
+                <a href="#produkty" class="hover:text-brand-accent transition-colors">Produkty</a>
+                <a href="#predict" class="hover:text-brand-accent transition-colors">Compaginis Predict</a>
+                <a href="#coach" class="hover:text-brand-coachAccent transition-colors">Compaginis Coach</a>
                 <a href="#wymagania" class="hover:text-brand-accent transition-colors">Wymagania</a>
-                <a href="#autonomia" class="hover:text-brand-accent transition-colors">Autonomia</a>
-                <a href="#cennik" class="hover:text-brand-accent transition-colors">Licencja</a>
             </div>
             
             <div>
-               <a href="#cennik" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2 rounded-lg font-semibold text-sm transition-all shadow-lg shadow-brand-accent/20">
-                   Zamów program
-               </a>
-           </div>
+                 <a href="#produkty" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2 rounded-lg font-semibold text-sm transition-all shadow-lg shadow-brand-accent/20">
+                      Wybierz produkt
+                 </a>
+          </div>
         </div>
     </nav>
 
@@ -64,157 +63,388 @@
         <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.brand.accent/10%),transparent)]"></div>
         
         <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-accent/30 bg-brand-accent/10 text-brand-accent text-xs font-semibold tracking-wide uppercase mb-6">
-            <i data-lucide="monitor" class="w-3.5 h-3.5"></i>
-            Desktopowe Oprogramowanie Analityczne
+            <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+            Suwerenne Oprogramowanie Desktopowe dla Sportu
         </span>
 
         <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight">
-            program do analityki i prognozy wyników <span class="text-brand-accent">sportowych</span>
+            analityka i sztab szkoleniowy w Twoim <span class="text-brand-accent">komputerze</span>
         </h1>
         
         <p class="text-lg sm:text-xl text-brand-muted max-w-3xl mx-auto mb-10 leading-relaxed">
-            <strong>Compaginis Predict</strong> to dedykowana aplikacja desktopowa do analizy danych statystycznych oraz kalkulacji numerycznych dla 7 dyscyplin sportowych.
+            Wybierz dedykowane narzędzia Compaginis: numeryczny system predykcji wyników sportowych <strong>Predict</strong> lub profesjonalny system wsparcia taktycznego sztabu <strong>Coach</strong>.
         </p>
 
         <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#cennik" class="bg-brand-accent hover:bg-brand-accentHover text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl shadow-brand-accent/25 transition-all flex items-center justify-center gap-2">
-                Pobierz Compaginis Predict <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            <a href="#predict" class="bg-brand-accent hover:bg-brand-accentHover text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl shadow-brand-accent/25 transition-all flex items-center justify-center gap-2">
+                Compaginis Predict <i data-lucide="arrow-right" class="w-5 h-5"></i>
             </a>
-            <a href="#dyscypliny" class="bg-brand-card hover:bg-gray-800 border border-gray-700 font-semibold px-8 py-4 rounded-xl text-lg transition-all flex items-center justify-center">
-                Poznaj specyfikację
+            <a href="#coach" class="bg-brand-card hover:bg-gray-800 border border-brand-coachAccent/50 text-brand-coachAccent font-semibold px-8 py-4 rounded-xl text-lg transition-all flex items-center justify-center gap-2">
+                Compaginis Coach <i data-lucide="shield" class="w-5 h-5"></i>
             </a>
         </div>
     </section>
 
-    <!-- Sekcja Obsługiwane Dyscypliny (7 dyscyplin) -->
-    <section id="dyscypliny" class="py-16 bg-brand-dark/50">
+    <!-- Wybór Produktów (Zakładki / Kafelki ogólne) -->
+    <section id="produkty" class="py-16 bg-brand-dark/50 border-y border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold">Obsługiwane dyscypliny sportowe</h2>
-                <p class="text-brand-muted mt-2">Dedykowane algorytmy kalkulacyjne dostosowane do specyfiki 7 dyscyplin.</p>
-            </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
-                <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
-                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
-                        <i data-lucide="circle-dot" class="w-5 h-5"></i>
-                    </div>
-                    <h3 class="font-bold text-base">Piłka Nożna</h3>
-                </div>
-
-                <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
-                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
-                        <i data-lucide="snowflake" class="w-5 h-5"></i>
-                    </div>
-                    <h3 class="font-bold text-base">Hokej na lodzie</h3>
-                </div>
-
-                <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
-                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
-                        <i data-lucide="target" class="w-5 h-5"></i>
-                    </div>
-                    <h3 class="font-bold text-base">Piłka Ręczna</h3>
-                </div>
-
-                <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
-                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
-                        <i data-lucide="orbit" class="w-5 h-5"></i>
-                    </div>
-                    <h3 class="font-bold text-base">Koszykówka</h3>
-                </div>
-
-                <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
-                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
-                        <i data-lucide="activity" class="w-5 h-5"></i>
-                    </div>
-                    <h3 class="font-bold text-base">Siatkówka</h3>
-                </div>
-
-                <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
-                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
-                        <i data-lucide="shield" class="w-5 h-5"></i>
-                    </div>
-                    <h3 class="font-bold text-base">Baseball</h3>
-                </div>
-
-                <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all col-span-2 lg:col-span-1 flex flex-col items-center justify-center">
-                    <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3">
-                        <i data-lucide="flag" class="w-5 h-5"></i>
-                    </div>
-                    <h3 class="font-bold text-base">Rugby</h3>
-                </div>
-           </div>
-        </div>
-    </section>
-
-    <!-- Funkcje / Architektura (Możliwości) -->
-    <section id="funkcje" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold">Możliwości i Architektura Analityczna</h2>
-                <p class="text-brand-muted mt-2">Kompletny zestaw funkcji wspomagających predykcję numeryczną.</p>
-           </div>
-
-            <!-- Prezentacja Panelu Programu w motywie ciemnym -->
-            <div class="mb-16 max-w-4xl mx-auto">
-                <div class="bg-brand-card p-3 sm:p-5 rounded-3xl border border-gray-800 shadow-2xl">
-                    <img src="panel.png" alt="Panel główny Compaginis Predict" class="rounded-2xl w-full h-auto border border-gray-700">
-                    <p class="text-center text-xs sm:text-sm text-brand-muted mt-4">
-                        <strong>Panel główny programu w trybie ciemnym, z wprowadzonymi danymi analitycznymi (przykładowymi):</strong> wynik główny prognozy widoczny jest natychmiast na pulpicie, a pełny raport i wykresy sprawdzisz jednym kliknięciem w dedykowanej zakładce analitycznej.
-                    </p>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all">
-                    <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
-                        <i data-lucide="calculator" class="w-6 h-6"></i>
-                    </div>
-                   <h3 class="text-xl font-bold mb-3">Kalkulacje Numeryczne</h3>
-                   <p class="text-brand-muted leading-relaxed">Szybkie przeliczanie złożonych modeli matematycznych na podstawie minimalnej ilości zmiennych wejściowych.</p>
-                </div>
-
-                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all">
-                    <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
-                        <i data-lucide="line-chart" class="w-6 h-6"></i>
-                    </div>
-                   <h3 class="text-xl font-bold mb-3">Badanie Efektywności</h3>
-                   <p class="text-brand-muted leading-relaxed">Ocenianie wskaźnika wydajnościowego oraz wykrywanie odchyleń statystycznych podczas analizy zdarzenia.</p>
-                </div>
-
-                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all">
-                    <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
-                        <i data-lucide="cpu" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Algorytm Adaptacyjny</h3>
-                    <p class="text-brand-muted leading-relaxed">Program posiada wbudowany model uczący się na bazie zaistniałych zdarzeń sportowych, optymalizujący precyzję prognoz.</p>
-                </div>
-
-                <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all">
-                    <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
-                        <i data-lucide="file-text" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Eksport Wyników</h3>
-                    <p class="text-brand-muted leading-relaxed">Wygodna możliwość zapisu danych w formatach TXT oraz PDF oraz analiza bezpośrednio w komunikacie szczegółowym i na wykresach graficznych.</p>
-               </div>
-           </div>
-        </div>
-    </section>
-
-    <!-- Wymagania Systemowe i Techniczne -->
-    <section id="wymagania" class="py-20 bg-brand-dark/50">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold">Wymagania Systemowe i Techniczne</h2>
-                <p class="text-brand-muted mt-2">Specyfikacja środowiska operacyjnego oraz warunki korzystania z oprogramowania.</p>
+                <h2 class="text-3xl font-bold">Poznaj ekosystem oprogramowania</h2>
+                <p class="text-brand-muted mt-2">Dwa programy desktopowe skrojone pod potrzeby.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
+                <!-- Kafel Predict -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-gray-800 flex flex-col justify-between hover:border-brand-accent/50 transition-all">
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center border border-brand-accent/20">
+                                <i data-lucide="cpu" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Compaginis Predict</h3>
+                                <p class="text-xs text-brand-accent font-semibold uppercase tracking-wider">Analityka i Predykcja Numeryczna</p>
+                            </div>
+                        </div>
+                        <p class="text-brand-muted text-sm leading-relaxed mb-6">
+                            Dedykowana aplikacja desktopowa do analizy danych statystycznych oraz kalkulacji numerycznych dla 7 dyscyplin sportowych. Pełna autonomia danych, wbudowany model adaptacyjny i eksport raportów.
+                        </p>
+                    </div>
+                    <a href="#predict" class="w-full bg-brand-accent hover:bg-brand-accentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center">
+                        Przejdź do Compaginis Predict
+                    </a>
+                </div>
+
+                <!-- Kafel Coach -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-gray-800 flex flex-col justify-between hover:border-brand-coachAccent/50 transition-all">
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-brand-coachAccent/10 text-brand-coachAccent rounded-xl flex items-center justify-center border border-brand-coachAccent/20">
+                                <i data-lucide="shield" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Compaginis Coach</h3>
+                                <p class="text-xs text-brand-coachAccent font-semibold uppercase tracking-wider">System Wsparcia Sztabu Szkoleniowego</p>
+                            </div>
+                        </div>
+                        <p class="text-brand-muted text-sm leading-relaxed mb-6">
+                            narzędzie dla trenera: między innymi zarządzanie kadrą, tablice trenerskie, analiza obciążeń RPE i Wellness, macierz socjometryczna szatni, model xG, algorytmiczny generator wyjściowej jedenastki.
+                        </p>
+                    </div>
+                    <a href="#coach" class="w-full bg-brand-coachAccent hover:bg-brand-coachAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center">
+                        Przejdź do Compaginis Coach
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SEKCJA 1: COMPAGINIS PREDICT               -->
+    <!-- ========================================== -->
+    <div id="predict">
+        <!-- Sekcja Główna Predict -->
+        <section class="pt-20 pb-12 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-accent/30 bg-brand-accent/10 text-brand-accent text-xs font-semibold tracking-wide uppercase mb-4">
+                <i data-lucide="monitor" class="w-3.5 h-3.5"></i>
+                Produkt 1: Compaginis Predict
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-black tracking-tight mb-4">
+                program do analityki i prognozy wyników <span class="text-brand-accent">sportowych</span>
+            </h2>
+            <p class="text-base sm:text-lg text-brand-muted max-w-3xl mx-auto">
+                <strong>Compaginis Predict</strong> to dedykowana aplikacja desktopowa do analizy danych statystycznych oraz kalkulacji numerycznych dla 7 dyscyplin sportowych.
+            </p>
+        </section>
+
+        <!-- Obsługiwane Dyscypliny Predict (7 dyscyplin) -->
+        <section class="py-12 bg-brand-dark/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-bold">Obsługiwane dyscypliny (Predict)</h3>
+                    <p class="text-brand-muted text-sm mt-1">Dedykowane algorytmy kalkulacyjne dostosowane do specyfiki 7 dyscyplin.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                    <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
+                        <div class="w-9 h-9 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3"><i data-lucide="circle-dot" class="w-4 h-4"></i></div>
+                        <h4 class="font-bold text-sm">Piłka Nożna</h4>
+                    </div>
+                    <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
+                        <div class="w-9 h-9 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3"><i data-lucide="snowflake" class="w-4 h-4"></i></div>
+                        <h4 class="font-bold text-sm">Hokej na lodzie</h4>
+                    </div>
+                    <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
+                        <div class="w-9 h-9 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3"><i data-lucide="target" class="w-4 h-4"></i></div>
+                        <h4 class="font-bold text-sm">Piłka Ręczna</h4>
+                    </div>
+                    <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
+                        <div class="w-9 h-9 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3"><i data-lucide="orbit" class="w-4 h-4"></i></div>
+                        <h4 class="font-bold text-sm">Koszykówka</h4>
+                    </div>
+                    <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
+                        <div class="w-9 h-9 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3"><i data-lucide="activity" class="w-4 h-4"></i></div>
+                        <h4 class="font-bold text-sm">Siatkówka</h4>
+                    </div>
+                    <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all flex flex-col items-center justify-center">
+                        <div class="w-9 h-9 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3"><i data-lucide="shield" class="w-4 h-4"></i></div>
+                        <h4 class="font-bold text-sm">Baseball</h4>
+                    </div>
+                    <div class="bg-brand-card p-5 rounded-2xl border border-gray-800 text-center hover:border-brand-accent/50 transition-all col-span-2 lg:col-span-1 flex flex-col items-center justify-center">
+                        <div class="w-9 h-9 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-3"><i data-lucide="flag" class="w-4 h-4"></i></div>
+                        <h4 class="font-bold text-sm">Rugby</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panel i Możliwości Predict -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold">Możliwości i Architektura Analityczna</h3>
+                    <p class="text-brand-muted mt-2">Zestaw funkcji wspomagających predykcję numeryczną.</p>
+                </div>
+
+                <div class="mb-14 max-w-4xl mx-auto">
+                    <div class="bg-brand-card p-3 sm:p-5 rounded-3xl border border-gray-800 shadow-2xl">
+                        <img src="panel.png" alt="Panel główny Compaginis Predict" class="rounded-2xl w-full h-auto border border-gray-700">
+                        <p class="text-center text-xs sm:text-sm text-brand-muted mt-4">
+                            <strong>Panel główny programu w trybie ciemnym (Predict):</strong> wynik główny prognozy widoczny jest natychmiast na pulpicie, a pełny raport i wykresy sprawdzisz jednym kliknięciem.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-4"><i data-lucide="calculator" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Kalkulacje Numeryczne</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Szybkie przeliczanie złożonych modeli matematycznych na podstawie minimalnej ilości zmiennych wejściowych.</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-4"><i data-lucide="line-chart" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Badanie Efektywności</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Ocenianie wskaźnika wydajnościowego oraz wykrywanie odchyleń statystycznych podczas analizy zdarzenia.</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-4"><i data-lucide="cpu" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Algorytm Adaptacyjny</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Wbudowany model uczący się na bazie zaistniałych zdarzeń sportowych, optymalizujący precyzję prognoz.</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-4"><i data-lucide="file-text" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Eksport Wyników</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Wygodna możliwość zapisu danych w formatach TXT oraz PDF oraz analiza bezpośrednio w komunikacie szczegółowym.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cennik Predict (3 warianty) -->
+        <section class="py-16 bg-brand-dark/50 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-3xl font-bold mb-3">Warianty licencji Compaginis Predict</h3>
+                <p class="text-brand-muted mb-10 text-sm">Wybierz okres subskrypcji oprogramowania Compaginis Predict.</p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- 1 Miesiąc -->
+                    <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Licencja 1 Miesiąc</h4>
+                            <p class="text-brand-muted text-sm mb-6">Elastyczny dostęp na 30 dni</p>
+                            <div class="my-6">
+                                <span class="text-4xl font-black">299</span>
+                                <span class="text-brand-muted text-sm"> PLN / mies.</span>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik kalkulacyjny</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Obsługa 7 dyscyplin</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCheckout('predict-1m', 'Compaginis Predict - Licencja 1 Miesiąc', 'https://www.naffy.io/compaginis/compaginis-predict-licencja-1-miesiac-iyi')" class="block w-full bg-gray-800 hover:bg-brand-accent text-white font-bold py-3 rounded-xl text-sm transition-all text-center cursor-pointer">
+                            Wybierz 1 Miesiąc
+                        </button>
+                    </div>
+
+                    <!-- 3 Miesiące (Najczęściej wybierany) -->
+                    <div class="bg-brand-card border-2 border-brand-accent rounded-3xl p-8 relative flex flex-col justify-between shadow-xl">
+                        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-accent text-white px-3 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                            Najczęściej wybierany
+                        </span>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Licencja 3 Miesiące</h4>
+                            <p class="text-brand-muted text-sm mb-6">Dostęp kwartalny</p>
+                            <div class="my-6">
+                                <span class="text-4xl font-black">499</span>
+                                <span class="text-brand-muted text-sm"> PLN / kwartał</span>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik kalkulacyjny</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Obsługa 7 dyscyplin</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCheckout('predict-3m', 'Compaginis Predict - Licencja 3 Miesiące', 'https://www.naffy.io/compaginis/compaginis-predict-licencja-3-miesiace-jtl')" class="block w-full bg-brand-accent hover:bg-brand-accentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-accent/20 cursor-pointer">
+                            Wybierz 3 Miesiące
+                        </button>
+                    </div>
+
+                    <!-- 6 Miesięcy -->
+                    <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Licencja 6 Miesięcy</h4>
+                            <p class="text-brand-muted text-sm mb-6">Dostęp półroczny</p>
+                            <div class="my-6">
+                                <span class="text-4xl font-black">849</span>
+                                <span class="text-brand-muted text-sm"> PLN / 6 mies.</span>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik kalkulacyjny</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Obsługa 7 dyscyplin</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCheckout('predict-6m', 'Compaginis Predict - Licencja 6 Miesięcy', 'https://www.naffy.io/compaginis/compaginis-predict-licencja-6-miesiecy-hr8')" class="block w-full bg-gray-800 hover:bg-brand-accent text-white font-bold py-3 rounded-xl text-sm transition-all text-center cursor-pointer">
+                            Wybierz 6 Miesięcy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- SEKCJA 2: COMPAGINIS COACH                 -->
+    <!-- ========================================== -->
+    <div id="coach" class="border-t-2 border-brand-coachAccent/30">
+        <!-- Sekcja Główna Coach -->
+        <section class="pt-20 pb-12 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-coachAccent/30 bg-brand-coachAccent/10 text-brand-coachAccent text-xs font-semibold tracking-wide uppercase mb-4">
+                <i data-lucide="shield" class="w-4 h-4"></i>
+                Produkt 2: Compaginis Coach
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-black tracking-tight mb-4">
+                trenerskie narzędzie taktyczne i wsparcie <span class="text-brand-coachAccent">sztabu szkoleniowego</span>
+            </h2>
+            <p class="text-base sm:text-lg text-brand-muted max-w-3xl mx-auto">
+                <strong>Compaginis Coach</strong> to system desktopowy dla trenerów i analityków. Obsługuje zarządzanie kadrą, monitorowanie obciążeń RPE, macierz relacji w szatni, tablice trenerskie  oraz model xG.
+            </p>
+        </section>
+
+        <!-- Panel i Możliwości Coach -->
+        <section class="py-16 bg-brand-dark/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold">Możliwości i Architektura Sztabu (Coach)</h3>
+                    <p class="text-brand-muted mt-2">Kompleksowe bloki funkcjonalne.</p>
+                </div>
+
+                <div class="mb-14 max-w-4xl mx-auto">
+                    <div class="bg-brand-card p-3 sm:p-5 rounded-3xl border border-gray-800 shadow-2xl">
+                        <img src="panel-coach.png" alt="Panel główny Compaginis Coach" class="rounded-2xl w-full h-auto border border-gray-700">
+                        <p class="text-center text-xs sm:text-sm text-brand-muted mt-4">
+                            <strong>Panel główny Compaginis Coach:</strong> podstawowe informacje o Twojej drużynie i przeciwniku.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-coachAccent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-coachAccent/10 text-brand-coachAccent rounded-xl flex items-center justify-center mb-4"><i data-lucide="users" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Zarządzanie i Kadry</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Edytor kadry, statystyki bieżącego okresu, monitorowanie kartek, kontuzji oraz parametrów fizycznych.</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-coachAccent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-coachAccent/10 text-brand-coachAccent rounded-xl flex items-center justify-center mb-4"><i data-lucide="layout-template" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Murawa i Sektory</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Interaktywne przesuwanie formacji, korytarze wertykalne/horyzontalne, strefy bezpośredniej finalizacji oraz rysowanie schematów SFG.</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-coachAccent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-coachAccent/10 text-brand-coachAccent rounded-xl flex items-center justify-center mb-4"><i data-lucide="heart-pulse" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Fizjologia i Szatnia</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Kontrola obciążeń Internal Load (RPE × minuty), Wellness zawodników (sen, stres, DOMS) oraz macierz socjometryczna relacji.</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-coachAccent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-coachAccent/10 text-brand-coachAccent rounded-xl flex items-center justify-center mb-4"><i data-lucide="bar-chart-3" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Model zintegrowanej prognozy meczowej i Raporty</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Zintegrowana prognoza sztabowa, analiza zachowań sędziego, automatyczny wybór najlepszej 11-tki, eksport raportów taktycznych do PDF i TXT.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cennik Coach (Półroczna i Roczna) -->
+        <section class="py-16 bg-brand-dark/50 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-3xl font-bold mb-3">Warianty licencji Compaginis Coach</h3>
+                <p class="text-brand-muted mb-10 text-sm">Wybierz okres subskrypcji systemu trenerskiego Compaginis Coach.</p>
+
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Półroczna (6 Miesięcy) -->
+                    <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Licencja 6 Miesięcy (Półroczna)</h4>
+                            <p class="text-brand-muted text-sm mb-6">I masz dostęp na całą rundę</p>
+                            <div class="my-6">
+                                <span class="text-4xl font-black">699</span>
+                                <span class="text-brand-muted text-sm"> PLN / 6 mies.</span>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-coachAccent w-4 h-4"></i> Pełny moduł sztabu i taktyki</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-coachAccent w-4 h-4"></i> Między innymi analiza obciążeń RPE & Wellness, zintegrowana prognoza meczowa, generowana najlepsza jedenastka</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-coachAccent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCheckout('coach-6m', 'Compaginis Coach - Licencja 6 Miesięcy', 'TUTAJ_LINK_NAFFY_COACH_6M')" class="block w-full bg-gray-800 hover:bg-brand-coachAccent text-white font-bold py-3 rounded-xl text-sm transition-all text-center cursor-pointer">
+                            Wybierz 6 Miesięcy
+                        </button>
+                    </div>
+
+                    <!-- Roczna (12 Miesięcy - Najczęściej wybierany) -->
+                    <div class="bg-brand-card border-2 border-brand-coachAccent rounded-3xl p-8 relative flex flex-col justify-between shadow-xl">
+                        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-coachAccent text-white px-3 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                            Najlepszy wybór na sezon
+                        </span>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Licencja 12 Miesięcy (Roczna)</h4>
+                            <p class="text-brand-muted text-sm mb-6">Posiadasz dostęp na cały rok szkoleniowy</p>
+                            <div class="my-6">
+                                <span class="text-4xl font-black">1299</span>
+                                <span class="text-brand-muted text-sm"> PLN / rok</span>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-coachAccent w-4 h-4"></i> Pełny moduł sztabu i taktyki</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-coachAccent w-4 h-4"></i> Między innymi analiza obciążeń RPE & Wellness, zintegrowana prognoza meczowa, generowana najlepsza jedenastka </li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-coachAccent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCheckout('coach-12m', 'Compaginis Coach - Licencja 12 Miesięcy', 'TUTAJ_LINK_NAFFY_COACH_12M')" class="block w-full bg-brand-coachAccent hover:bg-brand-coachAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-coachAccent/20 cursor-pointer">
+                            Wybierz 12 Miesięcy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- WYMAGANIA SYSTEMOWE I AUTONOMIA DANYCH     -->
+    <!-- ========================================== -->
+    <section id="wymagania" class="py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold">Wymagania Systemowe i Techniczne</h3>
+                <p class="text-brand-muted mt-2">Specyfikacja środowiska operacyjnego oraz warunki korzystania z oprogramowania.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
                 <div class="bg-brand-card p-8 rounded-3xl border border-gray-800">
                     <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
                         <i data-lucide="settings" class="w-6 h-6"></i>
                     </div>
-                   <h3 class="text-xl font-bold mb-4">Środowisko operacyjne i łączność</h3>
+                    <h4 class="text-xl font-bold mb-4">Środowisko operacyjne i łączność</h4>
                     <ul class="space-y-3 text-sm text-brand-muted">
                         <li class="flex items-start gap-2">
                             <i data-lucide="check" class="text-brand-accent w-4 h-4 mt-1 shrink-0"></i>
@@ -222,11 +452,11 @@
                         </li>
                         <li class="flex items-start gap-2">
                             <i data-lucide="check" class="text-brand-accent w-4 h-4 mt-1 shrink-0"></i>
-                            <span><strong>Wymagania dla Windows 7:</strong> Wymagany Service Pack 1 (SP1) oraz odpowiednio zaktualizowane pakiety Microsoft Visual C++ Redistributable.</span>
+                            <span><strong>Wymagania dla Windows 7:</strong> Wymagany Service Pack 1 (SP1) oraz pakiety Microsoft Visual C++ Redistributable.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <i data-lucide="check" class="text-brand-accent w-4 h-4 mt-1 shrink-0"></i>
-                            <span><strong>Łączność sieciowa wyłącznie dla bezpieczeństwa:</strong> Aktywne połączenie z siecią Internet wykorzystywane jest wyłącznie w celach bezpieczeństwa do procesu aktywacji licencji oraz cyklicznej weryfikacji ważności licencji.</span>
+                            <span><strong>Łączność sieciowa dla bezpieczeństwa:</strong> Aktywne połączenie z siecią Internet wykorzystywane wyłącznie do aktywacji i weryfikacji licencyjnej.</span>
                         </li>
                     </ul>
                 </div>
@@ -235,7 +465,7 @@
                     <div class="w-12 h-12 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-6">
                         <i data-lucide="lock" class="w-6 h-6"></i>
                     </div>
-                   <h3 class="text-xl font-bold mb-4">Warunki licencyjne i prawne</h3>
+                    <h4 class="text-xl font-bold mb-4">Warunki licencyjne i prawne</h4>
                     <ul class="space-y-3 text-sm text-brand-muted">
                         <li class="flex items-start gap-2">
                             <i data-lucide="check" class="text-brand-accent w-4 h-4 mt-1 shrink-0"></i>
@@ -247,105 +477,29 @@
                         </li>
                         <li class="flex items-start gap-2">
                             <i data-lucide="check" class="text-brand-accent w-4 h-4 mt-1 shrink-0"></i>
-                            <span><strong>Charakter produktu:</strong> Oprogramowanie nie stanowi oferty usług finansowych albo inwestycyjnych. Służy wyłącznie celom analitycznym.</span>
+                            <span><strong>Charakter produktu:</strong> Oprogramowanie analityczne i trenerskie. Nie stanowi oferty usług finansowych czy inwestycyjnych.</span>
                         </li>
-                   </ul>
+                    </ul>
                 </div>
-           </div>
-        </div>
-    </section>
+            </div>
 
-    <!-- Sekcja Autonomia Danych -->
-    <section id="autonomia" class="py-20">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+            <!-- Autonomia danych -->
+            <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 sm:p-12">
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="w-16 h-16 bg-brand-accent/10 text-brand-accent rounded-2xl flex items-center justify-center shrink-0">
                         <i data-lucide="shield-check" class="w-8 h-8"></i>
                     </div>
                     <div>
-                       <h3 class="text-2xl font-bold mb-4">Autonomia danych i niezależność operacyjna</h3>
-                       <p class="text-brand-muted leading-relaxed mb-4">
-                            Compaginis Predict został zaprojektowany z myślą o pełnej suwerenności danych. Oprogramowanie nie posiada mechanizmów automatycznego ściągania danych rynkowych, czy statystycznych z zewnętrznych API lub internetu. Prognoza z programu nie jest gotowcem generowanym przez AI.
-                       </p>
-                       <p class="text-brand-muted leading-relaxed">
-                            Użytkownik wprowadza dane samodzielnie lub za pomocą plików wsadowych (CSV), co gwarantuje pełną autonomię, niezależność oraz odporność na kryzysy związane z przerwami w dostawie zewnętrznych usług danych, awariami serwerów zewnętrznych czy blokadami sieciowymi.
-                       </p>
+                        <h4 class="text-2xl font-bold mb-4">Autonomia danych i niezależność operacyjna</h4>
+                        <p class="text-brand-muted leading-relaxed mb-4">
+                            Oprogramowanie Compaginis zostało zaprojektowane z myślą o pełnej suwerenności danych. Aplikacje nie posiadają mechanizmów automatycznego ściągania danych z zewnętrznych nieautoryzowanych API. Prognozy i analizy nie są gotowcami generowanymi przez AI.
+                        </p>
+                        <p class="text-brand-muted leading-relaxed">
+                            Użytkownik wprowadza dane samodzielnie lub za pomocą lokalnych baz JSON, co gwarantuje pełną autonomię, niezależność oraz odporność na awarie zewnętrznych serwerów czy blokady sieciowe.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Cennik / Subskrypcje -->
-    <section id="cennik" class="py-20 bg-brand-dark/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold mb-4">Warianty licencji analitycznej</h2>
-            <p class="text-brand-muted mb-12">Wybierz okres subskrypcji oprogramowania Compaginis Predict.</p>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                
-                <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Licencja 1 Miesiąc</h3>
-                        <p class="text-brand-muted text-sm mb-6">Elastyczny dostęp na 30 dni</p>
-                        <div class="my-6">
-                            <span class="text-4xl font-black">299</span>
-                            <span class="text-brand-muted text-sm"> PLN / mies.</span>
-                        </div>
-                        <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik kalkulacyjny</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Obsługa 7 dyscyplin</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
-                        </ul>
-                    </div>
-                    <button onclick="openCheckout('1m', 'Licencja 1 Miesiąc')" class="block w-full bg-gray-800 hover:bg-brand-accent text-white font-bold py-3 rounded-xl text-sm transition-all text-center cursor-pointer">
-                        Wybierz 1 Miesiąc
-                    </button>
-                </div>
-
-                <div class="bg-brand-card border-2 border-brand-accent rounded-3xl p-8 relative flex flex-col justify-between shadow-xl">
-                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-accent text-white px-3 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider">
-                        Najczęściej wybierany
-                   </span>
-                   <div>
-                       <h3 class="text-xl font-bold mb-2">Licencja 3 Miesiące</h3>
-                       <p class="text-brand-muted text-sm mb-6">Dostęp kwartalny</p>
-                        <div class="my-6">
-                            <span class="text-4xl font-black">499</span>
-                            <span class="text-brand-muted text-sm"> PLN / kwartał</span>
-                        </div>
-                        <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik kalkulacyjny</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Obsługa 7 dyscyplin</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
-                        </ul>
-                    </div>
-                    <button onclick="openCheckout('3m', 'Licencja 3 Miesiące')" class="block w-full bg-brand-accent hover:bg-brand-accentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-accent/20 cursor-pointer">
-                        Wybierz 3 Miesiące
-                    </button>
-                </div>
-
-                <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Licencja 6 Miesięcy</h3>
-                        <p class="text-brand-muted text-sm mb-6">Dostęp półroczny</p>
-                        <div class="my-6">
-                            <span class="text-4xl font-black">849</span>
-                            <span class="text-brand-muted text-sm"> PLN / 6 mies.</span>
-                        </div>
-                        <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Pełen silnik kalkulacyjny</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Obsługa 7 dyscyplin</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-accent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
-                        </ul>
-                    </div>
-                    <button onclick="openCheckout('6m', 'Licencja 6 Miesięcy')" class="block w-full bg-gray-800 hover:bg-brand-accent text-white font-bold py-3 rounded-xl text-sm transition-all text-center cursor-pointer">
-                        Wybierz 6 Miesięcy
-                   </button>
-               </div>
-
-           </div>
         </div>
     </section>
 
@@ -362,15 +516,15 @@
             </p>
 
             <div class="space-y-4 mb-6 text-sm text-brand-text">
-                <label class="flex items-start gap-3 cursor-pointer">
-                    <input type="checkbox" id="checkAge" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-accent focus:ring-brand-accent">
-                    <span>Oświadczam, że mam ukończone <strong>18 lat</strong> i posiadam pełną zdolność do czynności prawnych (§ 1 EULA).</span>
-                </label>
+               <label class="flex items-start gap-3 cursor-pointer">
+                   <input type="checkbox" id="checkAge" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-accent focus:ring-brand-accent">
+                   <span>Oświadczam, że mam ukończone <strong>18 lat</strong> i posiadam pełną zdolność do czynności prawnych (§ 1 EULA).</span>
+               </label>
 
-                <label class="flex items-start gap-3 cursor-pointer">
-                    <input type="checkbox" id="checkDocs" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-accent focus:ring-brand-accent">
-                    <span>Zapoznałem się z całą <a href="dokumentacja.html" target="_blank" class="text-brand-accent underline hover:text-white">Dokumentacją Prawną, Licencyjną i Podręcznikiem</a> oraz akceptuję warunki dostarczenia treści cyfrowych i brak prawa do odstąpienia od umowy po wygenerowaniu klucza HWID.</span>
-                </label>
+               <label class="flex items-start gap-3 cursor-pointer">
+                   <input type="checkbox" id="checkDocs" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-accent focus:ring-brand-accent">
+                   <span>Zapoznałem się z całą <a href="dokumentacja.html" target="_blank" class="text-brand-accent underline hover:text-white">Dokumentacją Prawną, Licencyjną i Podręcznikiem</a> oraz akceptuję warunki dostarczenia treści cyfrowych i brak prawa do odstąpienia od umowy po wygenerowaniu klucza HWID.</span>
+               </label>
             </div>
 
             <div id="modalError" class="text-red-500 text-xs mb-4 hidden font-medium">
@@ -378,35 +532,37 @@
             </div>
 
             <div class="flex flex-col sm:flex-row gap-3">
-                <button onclick="closeModal()" class="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 rounded-xl text-sm transition-all text-center">
-                    Anuluj
-                </button>
-                <button onclick="proceedToCheckout()" class="flex-1 bg-brand-accent hover:bg-brand-accentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-accent/20">
-                    Przejdź do Płatności <i data-lucide="external-link" class="w-4 h-4 inline ml-1"></i>
-                </button>
+               <button onclick="closeModal()" class="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 rounded-xl text-sm transition-all text-center">
+                   Anuluj
+               </button>
+               <button onclick="proceedToCheckout()" class="flex-1 bg-brand-accent hover:bg-brand-accentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-accent/20">
+                   Przejdź do Płatności <i data-lucide="external-link" class="w-4 h-4 inline ml-1"></i>
+               </button>
             </div>
         </div>
     </div>
 
-    <!-- Stopka (bez linii na górze) -->
-    <footer class="py-8 bg-brand-dark text-xs text-brand-muted text-center">
+    <!-- Stopka -->
+    <footer class="py-8 bg-brand-dark border-t border-gray-800 text-xs text-brand-muted text-center">
         <div class="max-w-7xl mx-auto px-4">
-            <p>&copy; 2026 Compaginis - Compaginis Predict (compaginis.pl). Wszelkie prawa zastrzeżone. Produkt przeznaczony wyłącznie dla osób pełnoletnich (18+).</p>
+           <p>&copy; 2026 Compaginis - Compaginis Predict & Compaginis Coach (compaginis.pl). Wszelkie prawa zastrzeżone. Produkty przeznaczone wyłącznie dla osób pełnoletnich (18+).</p>
         </div>
     </footer>
 
     <!-- Skrypty logiki modalu oraz ikony -->
     <script>
         const checkoutUrls = {
-            '1m': 'https://www.naffy.io/compaginis/compaginis-predict-licencja-1-miesiac-iyi',
-            '3m': 'https://www.naffy.io/compaginis/compaginis-predict-licencja-3-miesiace-jtl',
-            '6m': 'https://www.naffy.io/compaginis/compaginis-predict-licencja-6-miesiecy-hr8'
+            'predict-1m': 'https://www.naffy.io/compaginis/compaginis-predict-licencja-1-miesiac-iyi',
+            'predict-3m': 'https://www.naffy.io/compaginis/compaginis-predict-licencja-3-miesiace-jtl',
+            'predict-6m': 'https://www.naffy.io/compaginis/compaginis-predict-licencja-6-miesiecy-hr8',
+            'coach-6m': 'TUTAJ_LINK_NAFFY_COACH_6M', // Zastąp docelowym linkiem naffy dla Coacha
+            'coach-12m': 'TUTAJ_LINK_NAFFY_COACH_12M'  // Zastąp docelowym linkiem naffy dla Coacha
         };
 
         let targetCheckoutUrl = '';
 
-        function openCheckout(packageKey, packageName) {
-            targetCheckoutUrl = checkoutUrls[packageKey] || '';
+        function openCheckout(packageKey, packageName, packageUrl) {
+            targetCheckoutUrl = packageUrl || checkoutUrls[packageKey] || '';
             document.getElementById('modalPackageName').innerText = packageName;
             document.getElementById('checkAge').checked = false;
             document.getElementById('checkDocs').checked = false;
@@ -431,7 +587,7 @@
             if (targetCheckoutUrl && !targetCheckoutUrl.startsWith('TUTAJ_')) {
                 window.open(targetCheckoutUrl, '_blank');
             } else {
-                alert('Link do płatności nie został jeszcze skonfigurowany.');
+                alert('Link do płatności nie został jeszcze skonfigurowany dla tego pakietu.');
             }
             closeModal();
         }
