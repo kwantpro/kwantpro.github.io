@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podziękowanie za zakup produktu Compaginis</title>
+    <!-- Dodana blokada indeksowania dla robotów wyszukiwarek -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <title>Podziękowanie za zakup - Compaginis</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -15,6 +17,8 @@
                             card: '#161F30',
                             accent: '#FF5500',
                             accentHover: '#E04A00',
+                            coachAccent: '#38BDF8',
+                            coachAccentHover: '#0284C7',
                             text: '#F3F4F6',
                             muted: '#9CA3AF'
                         }
@@ -25,34 +29,38 @@
     </script>
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-brand-dark text-brand-text font-sans antialiased flex items-center justify-center min-h-screen px-4">
-
+<body class="bg-brand-dark text-brand-text font-sans antialiased flex items-center justify-center min-h-screen px-4 py-12">
+    
     <div class="bg-brand-card border border-gray-800 rounded-3xl max-w-xl w-full p-8 sm:p-10 text-center shadow-2xl">
         <div class="w-16 h-16 bg-green-500/10 text-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
             <i data-lucide="check-circle" class="w-10 h-10"></i>
         </div>
 
         <h1 class="text-2xl sm:text-3xl font-black tracking-tight mb-4 text-white">
-            Płatność zakończona sukcesem
+            Płatność zakończona sukcesem!
         </h1>
 
         <p class="text-brand-muted text-sm sm:text-base mb-8 leading-relaxed">
-            Potwierdzenie opłacenia licencji na program <strong class="text-white">Compaginis Predict</strong>. Transakcja została pomyślnie zweryfikowana i zaksięgowana.
+            Dziękujemy za zakup licencji w ekosystemie <strong class="text-white">Compaginis (Predict / Coach)</strong>. Transakcja została pomyślnie zweryfikowana i zaksięgowana.
         </p>
 
         <div class="space-y-4 text-left bg-brand-dark/60 p-6 rounded-2xl border border-gray-800 mb-8 text-sm">
             <div class="flex items-start gap-3">
                 <span class="w-6 h-6 rounded-full bg-brand-accent text-white flex items-center justify-center shrink-0 font-bold text-xs mt-0.5">1</span>
-                <p><strong>Pobranie oprogramowania:</strong> Bezpieczny odnośnik do pobrania instalatora został przesłany na adres e-mail powiązany z transakcją.</p>
+                <p><strong>Pobranie oprogramowania:</strong> Bezpieczny odnośnik do pobrania instalatora wybranego programu został przesłany na adres e-mail powiązany z transakcją.</p>
             </div>
             <div class="flex items-start gap-3">
                 <span class="w-6 h-6 rounded-full bg-brand-accent text-white flex items-center justify-center shrink-0 font-bold text-xs mt-0.5">2</span>
-                <p><strong>Odczyt identyfikatora sprzętowego:</strong> Po rozpakowaniu i uruchomieniu aplikacji w systemie Windows (wersja 64-bitowa) skopiuj unikalny kod <strong class="text-white">HWID</strong> wyświetlany w oknie aktywacji. <em>(W razie problemów upewnij się, że Twój antywirus nie blokuje dostępu do programu).</em></p>
+                <p><strong>Odczyt identyfikatora sprzętowego:</strong> Po rozpakowaniu i uruchomieniu aplikacji w systemie Windows (wersja 64-bitowa) skopiuj unikalny kod <strong class="text-white">HWID</strong> wyświetlany w oknie aktywacji. <em>(W razie problemów upewnij się, że Twój antywirus nie blokuje programu).</em></p>
             </div>
             <div class="flex items-start gap-3">
                 <span class="w-6 h-6 rounded-full bg-brand-accent text-white flex items-center justify-center shrink-0 font-bold text-xs mt-0.5">3</span>
                 <p><strong>Dostarczenie klucza licencyjnego:</strong> Skopiowany kod HWID należy przesłać na adres e-mail: <a href="mailto:kontakt@compaginis.pl" class="text-brand-accent underline">kontakt@compaginis.pl</a>. Wygenerowany klucz aktywacyjny zostanie odesłany w wiadomości zwrotnej.</p>
             </div>
+        </div>
+
+        <div class="bg-brand-accent/1{-10} border border-brand-accent/20 rounded-xl p-4 mb-8 text-xs text-brand-muted text-center">
+            💡 <strong class="text-white">Wskazówka:</strong> Klucze licencyjne generowane są ręcznie po weryfikacji kodu HWID, co gwarantuje pełne bezpieczeństwo Twojej subskrypcji.
         </div>
 
         <a href="index.html" class="inline-block bg-gray-800 hover:bg-gray-700 text-white font-semibold px-8 py-3 rounded-xl text-sm transition-all text-center">
