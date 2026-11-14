@@ -86,7 +86,7 @@
     </section>
 
     <!-- Wybór Produktów (Zakładki / Kafelki ogólne) -->
-    <section id="produkty" class="py-16 bg-brand-dark/50 border-y border-gray-800">
+    <section id="produkty" class="py-16 bg-brand-dark/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold">Poznaj ekosystem oprogramowania</h2>
@@ -240,7 +240,7 @@
         </section>
 
         <!-- Cennik Predict (3 warianty) -->
-        <section class="py-16 bg-brand-dark/50 border-t border-gray-800">
+        <section class="py-16 bg-brand-dark/50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h3 class="text-3xl font-bold mb-3">Warianty licencji Compaginis Predict</h3>
                 <p class="text-brand-muted mb-10 text-sm">Wybierz okres subskrypcji oprogramowania Compaginis Predict.</p>
@@ -317,7 +317,7 @@
     <!-- ========================================== -->
     <!-- SEKCJA 2: COMPAGINIS COACH                 -->
     <!-- ========================================== -->
-    <div id="coach" class="border-t-2 border-brand-coachAccent/30">
+    <div id="coach">
         <!-- Sekcja Główna Coach -->
         <section class="pt-20 pb-12 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
             <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-coachAccent/30 bg-brand-coachAccent/10 text-brand-coachAccent text-xs font-semibold tracking-wide uppercase mb-4">
@@ -375,7 +375,7 @@
         </section>
 
         <!-- Cennik Coach (Półroczna i Roczna) -->
-        <section class="py-16 bg-brand-dark/50 border-t border-gray-800">
+        <section class="py-16 bg-brand-dark/50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h3 class="text-3xl font-bold mb-3">Warianty licencji Compaginis Coach</h3>
                 <p class="text-brand-muted mb-10 text-sm">Wybierz okres subskrypcji systemu trenerskiego Compaginis Coach.</p>
@@ -423,6 +423,27 @@
                             Wybierz 12 Miesięcy
                         </button>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pobranie wersji demonstracyjnej Coach -->
+        <section id="demo" class="py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-brand-card p-8 sm:p-10 rounded-3xl border border-brand-coachAccent/40 shadow-2xl text-center">
+                    <div class="w-14 h-14 bg-brand-coachAccent/10 text-brand-coachAccent rounded-2xl flex items-center justify-center mx-auto mb-6 border border-brand-coachAccent/20">
+                        <i data-lucide="download" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-3">Pobierz wersję demonstracyjną Compaginis Coach</h3>
+                    <p class="text-brand-muted text-sm sm:text-base leading-relaxed mb-6 max-w-2xl mx-auto">
+                        Przetestuj pełny system trenerski na stałych danych demonstracyjnych: kadra z zawodnikami rezerwowymi, kadra rywala, sędzia, raporty PDF ze znakiem wodnym. Demo działa <strong class="text-white">3 dni</strong> od pierwszego uruchomienia i jest przypisane do komputera (HWID). Bez ryzyka - po zakupie licencji aktywujesz ten sam program kluczem do wersji pełnej.
+                    </p>
+                    <button onclick="openDemoDownload()" class="bg-brand-coachAccent hover:bg-brand-coachAccentHover text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl shadow-brand-coachAccent/25 transition-all inline-flex items-center justify-center gap-2">
+                        Pobierz wersję DEMO <i data-lucide="download" class="w-5 h-5"></i>
+                    </button>
+                    <p class="text-xs text-brand-muted mt-4">
+                        Przed pobraniem wymagane jest potwierdzenie oświadczeń prawnych (EULA) - tak samo jak przy zakupie licencji.
+                    </p>
                 </div>
             </div>
         </section>
@@ -542,8 +563,63 @@
         </div>
     </div>
 
+    <!-- Modal Potwierdzenia Prawnego dla pobrania wersji DEMO -->
+    <div id="demoModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
+        <div class="bg-brand-card border border-gray-700 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
+            <div class="flex items-center gap-3 mb-4 text-brand-coachAccent">
+                <i data-lucide="shield-alert" class="w-8 h-8 shrink-0"></i>
+                <h3 class="text-xl font-bold text-white">Oświadczenie przed pobraniem wersji DEMO</h3>
+            </div>
+
+            <p class="text-sm text-brand-muted mb-6 leading-relaxed">
+                Przed pobraniem wersji demonstracyjnej Compaginis Coach musisz zapoznać się z warunkami i potwierdzić swoje oświadczenia:
+            </p>
+
+            <div class="space-y-4 mb-6 text-sm text-brand-text">
+               <label class="flex items-start gap-3 cursor-pointer">
+                   <input type="checkbox" id="demoCheckAge" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-coachAccent focus:ring-brand-coachAccent">
+                   <span>Oświadczam, że mam ukończone <strong>18 lat</strong> i posiadam pełną zdolność do czynności prawnych (§ 1 EULA).</span>
+               </label>
+
+               <label class="flex items-start gap-3 cursor-pointer">
+                   <input type="checkbox" id="demoCheckDocs" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-coachAccent focus:ring-brand-coachAccent">
+                   <span>Zapoznałem się z całą <a href="dokumentacja.html" target="_blank" class="text-brand-coachAccent underline hover:text-white">Dokumentacją Prawną, Licencyjną i Podręcznikiem</a> oraz akceptuję warunki licencji demonstracyjnej (EULA).</span>
+               </label>
+            </div>
+
+            <div id="demoModalError" class="text-red-500 text-xs mb-4 hidden font-medium">
+                Musisz zaznaczyć oba oświadczenia, aby pobrać wersję demonstracyjną.
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3">
+               <button onclick="closeDemoModal()" class="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 rounded-xl text-sm transition-all text-center">
+                   Anuluj
+               </button>
+               <button onclick="proceedToDemoDownload()" class="flex-1 bg-brand-coachAccent hover:bg-brand-coachAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-coachAccent/20">
+                   Pobierz wersję DEMO <i data-lucide="download" class="w-4 h-4 inline ml-1"></i>
+               </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Podziękowania za pobranie wersji DEMO -->
+    <div id="demoThanksModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
+        <div class="bg-brand-card border border-brand-coachAccent/50 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl text-center">
+            <div class="w-14 h-14 bg-brand-coachAccent/10 text-brand-coachAccent rounded-2xl flex items-center justify-center mx-auto mb-5 border border-brand-coachAccent/20">
+                <i data-lucide="party-popper" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Dziękujemy za pobranie wersji demonstracyjnej!</h3>
+            <p class="text-sm text-brand-muted leading-relaxed mb-6">
+                Pobieranie wersji demonstracyjnej Compaginis Coach zostało rozpoczęte w nowej karcie. Demo działa <strong class="text-white">3 dni</strong> od pierwszego uruchomienia, na stałych danych demonstracyjnych, a raporty PDF zawierają znak wodny. Po zakupie licencji aktywujesz ten sam program kluczem do pełnej wersji.
+            </p>
+            <button onclick="closeDemoThanks()" class="w-full bg-brand-coachAccent hover:bg-brand-coachAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all shadow-lg shadow-brand-coachAccent/20">
+               Zamknij
+            </button>
+        </div>
+    </div>
+
     <!-- Stopka -->
-    <footer class="py-8 bg-brand-dark border-t border-gray-800 text-xs text-brand-muted text-center">
+    <footer class="py-8 bg-brand-dark text-xs text-brand-muted text-center">
         <div class="max-w-7xl mx-auto px-4">
            <p>&copy; 2026 Compaginis - Compaginis Predict & Compaginis Coach (compaginis.pl). Wszelkie prawa zastrzeżone. Produkty przeznaczone wyłącznie dla osób pełnoletnich (18+).</p>
         </div>
@@ -590,6 +666,41 @@
                 alert('Link do płatności nie został jeszcze skonfigurowany dla tego pakietu.');
             }
             closeModal();
+        }
+
+        const demoDownloadUrl = 'TUTAJ_LINK_POBIERANIA_DEMO'; // Zastąp docelowym linkiem do pobierania wersji demo
+
+        function openDemoDownload() {
+            document.getElementById('demoCheckAge').checked = false;
+            document.getElementById('demoCheckDocs').checked = false;
+            document.getElementById('demoModalError').classList.add('hidden');
+            document.getElementById('demoModal').classList.remove('hidden');
+        }
+
+        function closeDemoModal() {
+            document.getElementById('demoModal').classList.add('hidden');
+        }
+
+        function proceedToDemoDownload() {
+            const isAgeChecked = document.getElementById('demoCheckAge').checked;
+            const isDocsChecked = document.getElementById('demoCheckDocs').checked;
+
+            if (!isAgeChecked || !isDocsChecked) {
+                document.getElementById('demoModalError').classList.remove('hidden');
+                return;
+            }
+
+            closeDemoModal();
+            if (demoDownloadUrl && !demoDownloadUrl.startsWith('TUTAJ_')) {
+                window.open(demoDownloadUrl, '_blank');
+            } else {
+                alert('Link do pobierania wersji demonstracyjnej nie został jeszcze skonfigurowany.');
+            }
+            document.getElementById('demoThanksModal').classList.remove('hidden');
+        }
+
+        function closeDemoThanks() {
+            document.getElementById('demoThanksModal').classList.add('hidden');
         }
 
         lucide.createIcons();
