@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compaginis - Oprogramowanie Analityczne i Trenerskie w Sporcie</title>
-    <meta name="description" content="Compaginis - oprogramowanie desktopowe do predykcji sportowej (Predict) oraz wsparcia sztabu szkoleniowego (Coach).">
-    
-    <!-- Tailwind CSS (CDN) -->
+    <meta name="description" content="Compaginis - oprogramowanie desktopowe do predykcji sportowej (Predict), wsparcia sztabu szkoleniowego (Coach) oraz prognozowania sportowego (Prognoser).">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,6 +18,8 @@
                             accentHover: '#E04A00',
                             coachAccent: '#38BDF8',
                             coachAccentHover: '#0284C7',
+                            prognoserAccent: '#34D399',
+                            prognoserAccentHover: '#059669',
                             text: '#F3F4F6',
                             muted: '#9CA3AF'
                         }
@@ -28,7 +28,6 @@
             }
         }
     </script>
-    <!-- Ikony Lucide -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-brand-dark text-brand-text font-sans antialiased selection:bg-brand-accent selection:text-white">
@@ -42,14 +41,13 @@
                     COMPAGINIS
                 </span>
             </a>
-            
             <div class="hidden md:flex space-x-8 text-sm font-medium">
                 <a href="#produkty" class="hover:text-brand-accent transition-colors">Produkty</a>
                 <a href="#predict" class="hover:text-brand-accent transition-colors">Compaginis Predict</a>
                 <a href="#coach" class="hover:text-brand-coachAccent transition-colors">Compaginis Coach</a>
+                <a href="#prognoser" class="hover:text-brand-prognoserAccent transition-colors">Compaginis Prognoser</a>
                 <a href="#wymagania" class="hover:text-brand-accent transition-colors">Wymagania</a>
             </div>
-            
             <div>
                  <a href="#produkty" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2 rounded-lg font-semibold text-sm transition-all shadow-lg shadow-brand-accent/20">
                       Wybierz produkt
@@ -61,26 +59,25 @@
     <!-- Sekcja Główna (Hero) -->
     <section class="pt-36 pb-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center relative overflow-hidden">
         <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.brand.accent/10%),transparent)]"></div>
-        
         <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-accent/30 bg-brand-accent/10 text-brand-accent text-xs font-semibold tracking-wide uppercase mb-6">
             <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
             Suwerenne Oprogramowanie Desktopowe dla Sportu
         </span>
-
         <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight">
-            analityka i sztab szkoleniowy w Twoim <span class="text-brand-accent">komputerze</span>
+            analityka, sztab szkoleniowy i prognozy w Twoim <span class="text-brand-accent">komputerze</span>
         </h1>
-        
         <p class="text-lg sm:text-xl text-brand-muted max-w-3xl mx-auto mb-10 leading-relaxed">
-            Wybierz dedykowane narzędzia Compaginis: numeryczny system predykcji wyników sportowych <strong>Predict</strong> lub profesjonalny system wsparcia taktycznego dla trenera <strong>Coach</strong>.
+            Wybierz dedykowane narzędzia Compaginis: numeryczny system predykcji wyników sportowych <strong>Predict</strong>, profesjonalny system wsparcia taktycznego dla trenera <strong>Coach</strong> lub system prognozowania sportowego oparty na analizie lingwistyczno-probabilistycznej <strong>Prognoser</strong>.
         </p>
-
         <div class="flex flex-col sm:flex-row justify-center gap-4">
             <a href="#predict" class="bg-brand-accent hover:bg-brand-accentHover text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl shadow-brand-accent/25 transition-all flex items-center justify-center gap-2">
                 Compaginis Predict <i data-lucide="arrow-right" class="w-5 h-5"></i>
             </a>
             <a href="#coach" class="bg-brand-card hover:bg-gray-800 border border-brand-coachAccent/50 text-brand-coachAccent font-semibold px-8 py-4 rounded-xl text-lg transition-all flex items-center justify-center gap-2">
                 Compaginis Coach <i data-lucide="shield" class="w-5 h-5"></i>
+            </a>
+            <a href="#prognoser" class="bg-brand-card hover:bg-gray-800 border border-brand-prognoserAccent/50 text-brand-prognoserAccent font-semibold px-8 py-4 rounded-xl text-lg transition-all flex items-center justify-center gap-2">
+                Compaginis Prognoser <i data-lucide="newspaper" class="w-5 h-5"></i>
             </a>
         </div>
     </section>
@@ -90,10 +87,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold">Poznaj ekosystem oprogramowania</h2>
-                <p class="text-brand-muted mt-2">Dwa programy desktopowe skrojone pod potrzeby.</p>
+                <p class="text-brand-muted mt-2">Trzy programy desktopowe skrojone pod potrzeby.</p>
             </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-3 gap-8">
                 <!-- Kafel Predict -->
                 <div class="bg-brand-card p-8 rounded-3xl border border-gray-800 flex flex-col justify-between hover:border-brand-accent/50 transition-all">
                     <div>
@@ -114,7 +110,6 @@
                         Przejdź do Compaginis Predict
                     </a>
                 </div>
-
                 <!-- Kafel Coach -->
                 <div class="bg-brand-card p-8 rounded-3xl border border-gray-800 flex flex-col justify-between hover:border-brand-coachAccent/50 transition-all">
                     <div>
@@ -133,6 +128,26 @@
                     </div>
                     <a href="#coach" class="w-full bg-brand-coachAccent hover:bg-brand-coachAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center">
                         Przejdź do Compaginis Coach
+                    </a>
+                </div>
+                <!-- Kafel Prognoser -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-gray-800 flex flex-col justify-between hover:border-brand-prognoserAccent/50 transition-all">
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-brand-prognoserAccent/10 text-brand-prognoserAccent rounded-xl flex items-center justify-center border border-brand-prognoserAccent/20">
+                                <i data-lucide="newspaper" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Compaginis Prognoser</h3>
+                                <p class="text-xs text-brand-prognoserAccent font-semibold uppercase tracking-wider">Analiza Lingwistyczno-Probabilistyczna</p>
+                            </div>
+                        </div>
+                        <p class="text-brand-muted text-sm leading-relaxed mb-6">
+                            Desktopowe narzędzie analityczno-prognostyczne z nowatorskim rozwiązaniem opierającym się na ocenie języka: analizuje publicznie dostępne i otwarte dane informacyjne o rywalizacji autorskim, deterministycznym silnikiem lingwistyczno-probabilistycznym i formułuje słowny raport prognozy - praca w całości na urządzeniu użytkownika.
+                        </p>
+                    </div>
+                    <a href="#prognoser" class="w-full bg-brand-prognoserAccent hover:bg-brand-prognoserAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center">
+                        Przejdź do Compaginis Prognoser
                     </a>
                 </div>
             </div>
@@ -204,7 +219,6 @@
                     <h3 class="text-3xl font-bold">Możliwości i Architektura Analityczna</h3>
                     <p class="text-brand-muted mt-2">Zestaw funkcji wspomagających predykcję numeryczną.</p>
                 </div>
-
                 <div class="mb-14 max-w-4xl mx-auto">
                     <div class="bg-brand-card p-3 sm:p-5 rounded-3xl border border-gray-800 shadow-2xl">
                         <img src="panel.png" alt="Panel główny Compaginis Predict" class="rounded-2xl w-full h-auto border border-gray-700">
@@ -213,7 +227,6 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all">
                         <div class="w-10 h-10 bg-brand-accent/10 text-brand-accent rounded-xl flex items-center justify-center mb-4"><i data-lucide="calculator" class="w-5 h-5"></i></div>
@@ -244,7 +257,6 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h3 class="text-3xl font-bold mb-3">Warianty licencji Compaginis Predict</h3>
                 <p class="text-brand-muted mb-10 text-sm">Wybierz okres subskrypcji oprogramowania Compaginis Predict.</p>
-
                 <div class="grid md:grid-cols-3 gap-8">
                     <!-- 1 Miesiąc -->
                     <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
@@ -265,7 +277,6 @@
                             Wybierz 1 Miesiąc
                         </button>
                     </div>
-
                     <!-- 3 Miesiące (Najczęściej wybierany) -->
                     <div class="bg-brand-card border-2 border-brand-accent rounded-3xl p-8 relative flex flex-col justify-between shadow-xl">
                         <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-accent text-white px-3 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider">
@@ -288,7 +299,6 @@
                             Wybierz 3 Miesiące
                         </button>
                     </div>
-
                     <!-- 6 Miesięcy -->
                     <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
                         <div>
@@ -312,7 +322,6 @@
             </div>
         </section>
     </div>
-
 
     <!-- ========================================== -->
     <!-- SEKCJA 2: COMPAGINIS COACH                 -->
@@ -339,7 +348,6 @@
                     <h3 class="text-3xl font-bold">Możliwości i Architektura Taktyczno Sztabowa (Coach)</h3>
                     <p class="text-brand-muted mt-2">Kompleksowe bloki funkcjonalne.</p>
                 </div>
-
                 <div class="mb-14 max-w-4xl mx-auto">
                     <div class="bg-brand-card p-3 sm:p-5 rounded-3xl border border-gray-800 shadow-2xl">
                         <img src="panel-coach.png" alt="Panel główny Compaginis Coach" class="rounded-2xl w-full h-auto border border-gray-700">
@@ -348,7 +356,6 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-coachAccent/50 transition-all">
                         <div class="w-10 h-10 bg-brand-coachAccent/10 text-brand-coachAccent rounded-xl flex items-center justify-center mb-4"><i data-lucide="users" class="w-5 h-5"></i></div>
@@ -379,7 +386,6 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h3 class="text-3xl font-bold mb-3">Warianty licencji Compaginis Coach</h3>
                 <p class="text-brand-muted mb-10 text-sm">Wybierz okres subskrypcji systemu trenerskiego Compaginis Coach.</p>
-
                 <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     <!-- Półroczna (6 Miesięcy) -->
                     <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
@@ -400,7 +406,6 @@
                             Wybierz 6 Miesięcy
                         </button>
                     </div>
-
                     <!-- Roczna (12 Miesięcy - Najczęściej wybierany) -->
                     <div class="bg-brand-card border-2 border-brand-coachAccent rounded-3xl p-8 relative flex flex-col justify-between shadow-xl">
                         <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-coachAccent text-white px-3 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider">
@@ -449,6 +454,156 @@
         </section>
     </div>
 
+    <!-- ========================================== -->
+    <!-- SEKCJA 3: COMPAGINIS PROGNOSER             -->
+    <!-- ========================================== -->
+    <div id="prognoser">
+        <!-- Sekcja Główna Prognoser -->
+        <section class="pt-20 pb-12 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-prognoserAccent/30 bg-brand-prognoserAccent/10 text-brand-prognoserAccent text-xs font-semibold tracking-wide uppercase mb-4">
+                <i data-lucide="newspaper" class="w-4 h-4"></i>
+                Produkt 3: Compaginis Prognoser
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-black tracking-tight mb-4">
+                prognozy sportowe oparte na analizie <span class="text-brand-prognoserAccent">lingwistycznej i probabilistycznej</span>
+            </h2>
+            <p class="text-base sm:text-lg text-brand-muted max-w-3xl mx-auto">
+                <strong>Compaginis Prognoser</strong> to desktopowe narzędzie analityczno-prognostyczne. Analizuje językowo publicznie dostępne otwarte dane informacyjne o rywalizacji autorskim, deterministycznym silnikiem lingwistyczno -probabilistycznym i formułuje słowny raport z prognozą procentową wyniku oraz wskaźnikiem napięcia przedmeczowego - w całości na urządzeniu użytkownika i tak jak wszystkie produkty marki Compaginis bez wykorzystania sztucznej inteligencji (AI) ani sieci neuronowych.
+            </p>
+        </section>
+
+        <!-- Możliwości Prognoser -->
+        <section class="py-16 bg-brand-dark/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold">Możliwości i Architektura Analityczna (Prognoser)</h3>
+                    <p class="text-brand-muted mt-2">Autorski silnik analityczny pracujący na języku i prawdopodobieństwie.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-prognoserAccent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-prognoserAccent/10 text-brand-prognoserAccent rounded-xl flex items-center justify-center mb-4"><i data-lucide="languages" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Silnik Lingwistyczno-Probabilistyczny</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Autorski, deterministyczny silnik analizuje treść publicznie dostępnych danych informacyjnych w wielu językach i przekłada sygnały językowe na prognozę procentową - bez wykorzystania AI ani sieci neuronowych.</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-prognoserAccent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-prognoserAccent/10 text-brand-prognoserAccent rounded-xl flex items-center justify-center mb-4"><i data-lucide="scan-search" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Skan Wielu Źródeł i Języków</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Program przeszukuje publicznie dostępne dane informacyjne w rynkach językowych, dokonując swojej oceny i przetwarzając informacje słowne na prognozę .</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-prognoserAccent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-prognoserAccent/10 text-brand-prognoserAccent rounded-xl flex items-center justify-center mb-4"><i data-lucide="file-text" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Słowny Raport i Napięcie Przedmeczowe</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Wynik główny prognozy z przedziałem niepewności, charakter przewidywanej rywalizacji, wskaźnik napięcia przedmeczowego oraz uczciwa ocena wiarygodności i braków w danych.</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-prognoserAccent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-prognoserAccent/10 text-brand-prognoserAccent rounded-xl flex items-center justify-center mb-4"><i data-lucide="hard-drive-download" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Praca Lokalna i Monitorowanie</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Analiza i obliczenia wykonywane na urządzeniu użytkownika; zapisywane raporty i lokalna baza prognoz. Opcjonalne cykliczne monitorowanie z alertem o zmianach w prognozie.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jak to działa (Prognoser) -->
+        <section class="py-12">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-bold">Jak działa Compaginis Prognoser</h3>
+                    <p class="text-brand-muted text-sm mt-1">Trzy kroki od danych do słownego raportu.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center">
+                        <div class="w-10 h-10 bg-brand-prognoserAccent/10 text-brand-prognoserAccent rounded-xl flex items-center justify-center mx-auto mb-4"><i data-lucide="list" class="w-5 h-5"></i></div>
+                        <h4 class="font-bold mb-2">1. Wybierz dyscyplinę</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Dyscyplinę sportową wybierasz z listy rozwijanej.</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center">
+                        <div class="w-10 h-10 bg-brand-prognoserAccent/10 text-brand-prognoserAccent rounded-xl flex items-center justify-center mx-auto mb-4"><i data-lucide="pen-line" class="w-5 h-5"></i></div>
+                        <h4 class="font-bold mb-2">2. Wpisz strony rywalizacji i datę</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Nazwy drużyn lub nazwiska zawodników obu stron oraz datę wydarzenia z list rozwijanych.</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 text-center">
+                        <div class="w-10 h-10 bg-brand-prognoserAccent/10 text-brand-prognoserAccent rounded-xl flex items-center justify-center mx-auto mb-4"><i data-lucide="file-text" class="w-5 h-5"></i></div>
+                        <h4 class="font-bold mb-2">3. Odbierz raport</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Po analizie (pasek postępu) wynik główny pojawi się w panelu, a pełny raport słowny poniżej.</p>
+                    </div>
+                </div>
+                <p class="text-center text-xs text-brand-muted mt-8 max-w-3xl mx-auto">
+                    Wymagany ciągły dostęp do Internetu w trakcie przeprowadzania analizy - ale analiza i prognozowanie wykonywane są w całości na urządzeniu użytkownika, a wyniki, baza prognoz i eksporty (PDF/TXT) zapisywane są lokalnie.
+                </p>
+            </div>
+        </section>
+
+        <!-- Cennik Prognoser (3 warianty) -->
+        <section class="py-16 bg-brand-dark/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-3xl font-bold mb-3">Warianty licencji Compaginis Prognoser</h3>
+                <p class="text-brand-muted mb-10 text-sm">Wybierz okres subskrypcji systemu prognozowania Compaginis Prognoser.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- 1 Miesiąc -->
+                    <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Licencja 1 Miesiąc</h4>
+                            <p class="text-brand-muted text-sm mb-6">Elastyczny dostęp na 30 dni</p>
+                            <div class="my-6">
+                                <span class="text-4xl font-black">TUTAJ_CENA_PROGNOSER_1M</span>
+                                <span class="text-brand-muted text-sm"> PLN / mies.</span>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-prognoserAccent w-4 h-4"></i> Pełen silnik lingwistyczno-probabilistyczny</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-prognoserAccent w-4 h-4"></i> Analiza publicznie dostępnych danych informacyjnych i słowny raport z prognozą</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-prognoserAccent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCheckout('prognoser-1m', 'Compaginis Prognoser - Licencja 1 Miesiąc', 'TUTAJ_LINK_NAFFY_PROGNOSER_1M')" class="block w-full bg-gray-800 hover:bg-brand-prognoserAccent text-white font-bold py-3 rounded-xl text-sm transition-all text-center cursor-pointer">
+                            Wybierz 1 Miesiąc
+                        </button>
+                    </div>
+                    <!-- 3 Miesiące (Najczęściej wybierany) -->
+                    <div class="bg-brand-card border-2 border-brand-prognoserAccent rounded-3xl p-8 relative flex flex-col justify-between shadow-xl">
+                        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-prognoserAccent text-white px-3 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                            Najczęściej wybierany
+                        </span>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Licencja 3 Miesiące</h4>
+                            <p class="text-brand-muted text-sm mb-6">Dostęp kwartalny</p>
+                            <div class="my-6">
+                                <span class="text-4xl font-black">TUTAJ_CENA_PROGNOSER_3M</span>
+                                <span class="text-brand-muted text-sm"> PLN / kwartał</span>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-prognoserAccent w-4 h-4"></i> Pełen silnik lingwistyczno-probabilistyczny</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-prognoserAccent w-4 h-4"></i> Analiza publicznie dostępnych danych informacyjnych i słowny raport z prognozą</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-prognoserAccent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCheckout('prognoser-3m', 'Compaginis Prognoser - Licencja 3 Miesiące', 'TUTAJ_LINK_NAFFY_PROGNOSER_3M')" class="block w-full bg-brand-prognoserAccent hover:bg-brand-prognoserAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-prognoserAccent/20 cursor-pointer">
+                            Wybierz 3 Miesiące
+                        </button>
+                    </div>
+                    <!-- 6 Miesięcy -->
+                    <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Licencja 6 Miesięcy</h4>
+                            <p class="text-brand-muted text-sm mb-6">Dostęp półroczny</p>
+                            <div class="my-6">
+                                <span class="text-4xl font-black">TUTAJ_CENA_PROGNOSER_6M</span>
+                                <span class="text-brand-muted text-sm"> PLN / 6 mies.</span>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-prognoserAccent w-4 h-4"></i> Pełen silnik lingwistyczno-probabilistyczny</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-prognoserAccent w-4 h-4"></i> Analiza publicznie dostępnych danych informacyjnych i słowny raport z prognozą</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-prognoserAccent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCheckout('prognoser-6m', 'Compaginis Prognoser - Licencja 6 Miesięcy', 'TUTAJ_LINK_NAFFY_PROGNOSER_6M')" class="block w-full bg-gray-800 hover:bg-brand-prognoserAccent text-white font-bold py-3 rounded-xl text-sm transition-all text-center cursor-pointer">
+                            Wybierz 6 Miesięcy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- ========================================== -->
     <!-- WYMAGANIA SYSTEMOWE I AUTONOMIA DANYCH     -->
@@ -477,7 +632,11 @@
                         </li>
                         <li class="flex items-start gap-2">
                             <i data-lucide="check" class="text-brand-accent w-4 h-4 mt-1 shrink-0"></i>
-                            <span><strong>Łączność sieciowa dla bezpieczeństwa:</strong> Aktywne połączenie z siecią Internet wykorzystywane wyłącznie do aktywacji i weryfikacji licencyjnej.</span>
+                            <span><strong>Łączność sieciowa dla bezpieczeństwa:</strong> Aktywne połączenie z siecią Internet wykorzystywane do aktywacji i weryfikacji licencyjnej (wszystkie programy marki Compaginis).</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="text-brand-prognoserAccent w-4 h-4 mt-1 shrink-0"></i>
+                            <span><strong>Łączność z Internetem (Compaginis Prognoser):</strong> Wymagany stały, ciągły dostęp do Internetu w trakcie przeprowadzania analiz - analiza i prognozowanie wykonywane są w całości na urządzeniu użytkownika.</span>
                         </li>
                     </ul>
                 </div>
@@ -498,7 +657,7 @@
                         </li>
                         <li class="flex items-start gap-2">
                             <i data-lucide="check" class="text-brand-accent w-4 h-4 mt-1 shrink-0"></i>
-                            <span><strong>Charakter produktu:</strong> Oprogramowanie analityczne i trenerskie. Nie stanowi oferty usług finansowych czy inwestycyjnych.</span>
+                            <span><strong>Charakter produktu:</strong> Oprogramowanie analityczne, trenerskie i prognostyczne. Nie stanowi oferty usług finansowych czy inwestycyjnych.</span>
                         </li>
                     </ul>
                 </div>
@@ -515,8 +674,11 @@
                         <p class="text-brand-muted leading-relaxed mb-4">
                             Oprogramowanie Compaginis zostało zaprojektowane z myślą o pełnej suwerenności danych. Aplikacje nie posiadają mechanizmów automatycznego ściągania danych z zewnętrznych nieautoryzowanych API. Prognozy i analizy nie są gotowcami generowanymi przez AI.
                         </p>
-                        <p class="text-brand-muted leading-relaxed">
+                        <p class="text-brand-muted leading-relaxed mb-4">
                             Użytkownik wprowadza dane samodzielnie lub za pomocą lokalnych baz, co gwarantuje pełną autonomię, niezależność oraz odporność na awarie zewnętrznych serwerów czy blokady sieciowe.
+                        </p>
+                        <p class="text-brand-muted leading-relaxed">
+                            Compaginis Prognoser w trakcie analizy korzysta z publicznie dostępnych danych informacyjnych (wymagany ciągły dostęp do Internetu w trakcie przeprowadzania analizy) - ale analiza i prognozowanie wykonywane są w całości na urządzeniu użytkownika, autorskim, deterministycznym silnikiem lingwistyczno-probabilistycznym, bez wykorzystania sztucznej inteligencji (AI) ani sieci neuronowych, a wyniki zapisywane są lokalnie.
                         </p>
                     </div>
                 </div>
@@ -531,27 +693,22 @@
                 <i data-lucide="shield-alert" class="w-8 h-8 shrink-0"></i>
                 <h3 class="text-xl font-bold text-white">Oświadczenie i Warunki Zakupu</h3>
             </div>
-            
             <p class="text-sm text-brand-muted mb-6 leading-relaxed">
                 Przed przejściem do płatności dla wybranego pakietu (<span id="modalPackageName" class="text-white font-semibold"></span>), musisz zapoznać się z warunkami i potwierdzić swoje oświadczenia:
             </p>
-
             <div class="space-y-4 mb-6 text-sm text-brand-text">
                <label class="flex items-start gap-3 cursor-pointer">
                    <input type="checkbox" id="checkAge" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-accent focus:ring-brand-accent">
                    <span>Oświadczam, że mam ukończone <strong>18 lat</strong> i posiadam pełną zdolność do czynności prawnych (§ 1 EULA).</span>
                </label>
-
                <label class="flex items-start gap-3 cursor-pointer">
                    <input type="checkbox" id="checkDocs" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-accent focus:ring-brand-accent">
                    <span>Zapoznałem się z całą <a href="dokumentacja.html" target="_blank" class="text-brand-accent underline hover:text-white">Dokumentacją Prawną, Licencyjną i Podręcznikiem</a> oraz akceptuję warunki dostarczenia treści cyfrowych i brak prawa do odstąpienia od umowy po wygenerowaniu klucza HWID.</span>
                </label>
             </div>
-
             <div id="modalError" class="text-red-500 text-xs mb-4 hidden font-medium">
                 Musisz zaznaczyć oba oświadczenia, aby przejść do płatności.
             </div>
-
             <div class="flex flex-col sm:flex-row gap-3">
                <button onclick="closeModal()" class="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 rounded-xl text-sm transition-all text-center">
                    Anuluj
@@ -570,27 +727,22 @@
                 <i data-lucide="shield-alert" class="w-8 h-8 shrink-0"></i>
                 <h3 class="text-xl font-bold text-white">Oświadczenie przed pobraniem wersji DEMO</h3>
             </div>
-
             <p class="text-sm text-brand-muted mb-6 leading-relaxed">
                 Przed pobraniem wersji demonstracyjnej Compaginis Coach musisz zapoznać się z warunkami i potwierdzić swoje oświadczenia:
             </p>
-
             <div class="space-y-4 mb-6 text-sm text-brand-text">
                <label class="flex items-start gap-3 cursor-pointer">
                    <input type="checkbox" id="demoCheckAge" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-coachAccent focus:ring-brand-coachAccent">
                    <span>Oświadczam, że mam ukończone <strong>18 lat</strong> i posiadam pełną zdolność do czynności prawnych (§ 1 EULA).</span>
                </label>
-
                <label class="flex items-start gap-3 cursor-pointer">
                    <input type="checkbox" id="demoCheckDocs" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-coachAccent focus:ring-brand-coachAccent">
                    <span>Zapoznałem się z całą <a href="dokumentacja.html" target="_blank" class="text-brand-coachAccent underline hover:text-white">Dokumentacją Prawną, Licencyjną i Podręcznikiem</a> oraz akceptuję warunki licencji demonstracyjnej (EULA).</span>
                </label>
             </div>
-
             <div id="demoModalError" class="text-red-500 text-xs mb-4 hidden font-medium">
                 Musisz zaznaczyć oba oświadczenia, aby pobrać wersję demonstracyjną.
             </div>
-
             <div class="flex flex-col sm:flex-row gap-3">
                <button onclick="closeDemoModal()" class="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 rounded-xl text-sm transition-all text-center">
                    Anuluj
@@ -610,7 +762,7 @@
             </div>
             <h3 class="text-xl font-bold text-white mb-3">Dziękujemy za pobranie wersji demonstracyjnej!</h3>
             <p class="text-sm text-brand-muted leading-relaxed mb-6">
-                Pobieranie wersji demonstracyjnej Compaginis Coach zostało rozpoczęte w nowej karcie. Demo działa <strong class="text-white">3 dni</strong> od pierwszego uruchomienia, na stałych danych demonstracyjnych, a raporty PDF zawierają znak wodny. Po zakupie licencji aktywujesz ten sam program kluczem do pełnej wersji.
+                Pobieranie wersji demonstracyjnej Compaginis Coach zostało rozpoczęte w nowej karcie. Demo działa <strong class="text-white">3 dni</strong> od pierwszego uruchomienia, na stałych danych demonstracyjnych, a raporty PDF zawierają znak wodny. Po zakupie licencji możesz aktywować ten sam program kluczem do pełnej wersji.
             </p>
             <button onclick="closeDemoThanks()" class="w-full bg-brand-coachAccent hover:bg-brand-coachAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all shadow-lg shadow-brand-coachAccent/20">
                Zamknij
@@ -621,7 +773,7 @@
     <!-- Stopka -->
     <footer class="py-8 bg-brand-dark text-xs text-brand-muted text-center">
         <div class="max-w-7xl mx-auto px-4">
-           <p>&copy; 2026 Compaginis - Compaginis Predict & Compaginis Coach (compaginis.pl). Wszelkie prawa zastrzeżone. Produkty przeznaczone wyłącznie dla osób pełnoletnich (18+).</p>
+           <p>&copy; 2026 Compaginis - Compaginis Predict, Compaginis Coach & Compaginis Prognoser (compaginis.pl). Wszelkie prawa zastrzeżone. Produkty przeznaczone wyłącznie dla osób pełnoletnich (18+).</p>
         </div>
     </footer>
 
@@ -632,7 +784,10 @@
             'predict-3m': 'https://www.naffy.io/compaginis/compaginis-predict-licencja-3-miesiace-jtl',
             'predict-6m': 'https://www.naffy.io/compaginis/compaginis-predict-licencja-6-miesiecy-hr8',
             'coach-6m': 'TUTAJ_LINK_NAFFY_COACH_6M', // Zastąp docelowym linkiem naffy dla Coacha
-            'coach-12m': 'TUTAJ_LINK_NAFFY_COACH_12M'  // Zastąp docelowym linkiem naffy dla Coacha
+            'coach-12m': 'TUTAJ_LINK_NAFFY_COACH_12M',  // Zastąp docelowym linkiem naffy dla Coacha
+            'prognoser-1m': 'TUTAJ_LINK_NAFFY_PROGNOSER_1M', // Zastąp docelowym linkiem naffy dla Prognosera
+            'prognoser-3m': 'TUTAJ_LINK_NAFFY_PROGNOSER_3M', // Zastąp docelowym linkiem naffy dla Prognosera
+            'prognoser-6m': 'TUTAJ_LINK_NAFFY_PROGNOSER_6M'  // Zastąp docelowym linkiem naffy dla Prognosera
         };
 
         let targetCheckoutUrl = '';
