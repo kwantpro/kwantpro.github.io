@@ -929,21 +929,10 @@
 
     <!-- Skrypty logiki modalu oraz ikony -->
     <script>
-        const checkoutUrls = {
-            'predict-1m': 'https://www.naffy.io/compaginis/compaginis-predict-licencja-1-miesiac-iyi',
-            'predict-3m': 'https://www.naffy.io/compaginis/compaginis-predict-licencja-3-miesiace-jtl',
-            'predict-6m': 'https://www.naffy.io/compaginis/compaginis-predict-licencja-6-miesiecy-hr8',
-            'coach-6m': 'TUTAJ_LINK_NAFFY_COACH_6M', // Zastąp docelowym linkiem naffy dla Coacha
-            'coach-12m': 'TUTAJ_LINK_NAFFY_COACH_12M',  // Zastąp docelowym linkiem naffy dla Coacha
-            'prognoser-1m': 'TUTAJ_LINK_NAFFY_PROGNOSER_1M', // Zastąp docelowym linkiem naffy dla Prognosera
-            'prognoser-3m': 'TUTAJ_LINK_NAFFY_PROGNOSER_3M', // Zastąp docelowym linkiem naffy dla Prognosera
-            'prognoser-6m': 'TUTAJ_LINK_NAFFY_PROGNOSER_6M'  // Zastąp docelowym linkiem naffy dla Prognosera
-        };
-
         let targetCheckoutUrl = '';
 
         function openCheckout(packageKey, packageName, packageUrl) {
-            targetCheckoutUrl = packageUrl || checkoutUrls[packageKey] || '';
+            targetCheckoutUrl = packageUrl || '';
             document.getElementById('modalPackageName').innerText = packageName;
             document.getElementById('checkAge').checked = false;
             document.getElementById('checkDocs').checked = false;
@@ -1010,7 +999,7 @@
         }
 
         // --- Wersja testowa (trial) Compaginis Predict ---
-        const trialDownloadUrlPredict = 'TUTAJ_LINK_TRIAL_PREDICT'; // Zastąp docelowym linkiem do pobierania wersji testowej Predict
+        const trialDownloadUrlPredict = 'https://drive.google.com/file/d/139mBVeQ1RLVmVLcZQQZTNuYJFOZukK-_/view'; // Zastąp docelowym linkiem do pobierania wersji testowej Predict
 
         function openTrialDownloadPredict() {
             document.getElementById('trialCheckAgePredict').checked = false;
@@ -1046,7 +1035,7 @@
         }
 
         // --- Wersja testowa (trial) Compaginis Prognoser ---
-        const trialDownloadUrlPrognoser = 'TUTAJ_LINK_TRIAL_PROGNOSER'; // Zastąp docelowym linkiem do pobierania wersji testowej Prognoser
+        const trialDownloadUrlPrognoser = 'https://drive.google.com/file/d/1fBI4G9LTUwuCneS98xpynIQyFKNkkkz4/view'; // Zastąp docelowym linkiem do pobierania wersji testowej Prognoser
 
         function openTrialDownloadPrognoser() {
             document.getElementById('trialCheckAgePrognoser').checked = false;
