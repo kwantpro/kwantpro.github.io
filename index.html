@@ -321,6 +321,27 @@
                 </div>
             </div>
         </section>
+
+        <!-- Pobranie wersji testowej (trial) Predict -->
+        <section id="trial-predict" class="py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-brand-card p-8 sm:p-10 rounded-3xl border border-brand-accent/40 shadow-2xl text-center">
+                    <div class="w-14 h-14 bg-brand-accent/10 text-brand-accent rounded-2xl flex items-center justify-center mx-auto mb-6 border border-brand-accent/20">
+                        <i data-lucide="download" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-3">Pobierz wersję testową Compaginis Predict</h3>
+                    <p class="text-brand-muted text-sm sm:text-base leading-relaxed mb-6 max-w-2xl mx-auto">
+                        Przetestuj pełny silnik kalkulacyjny programu: wersja testowa działa <strong class="text-white">3 dni</strong> od pierwszego uruchomienia i jest ograniczona do <strong class="text-white">30 wygenerowanych raportów</strong>, a także przypisana do komputera (HWID). Bez ryzyka - po zakupie licencji możesz aktywować ten sam program kluczem do wersji pełnej.
+                    </p>
+                    <button onclick="openTrialDownloadPredict()" class="bg-brand-accent hover:bg-brand-accentHover text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl shadow-brand-accent/25 transition-all inline-flex items-center justify-center gap-2">
+                        Pobierz wersję testową <i data-lucide="download" class="w-5 h-5"></i>
+                    </button>
+                    <p class="text-xs text-brand-muted mt-4">
+                        Przed pobraniem wymagane jest potwierdzenie oświadczeń prawnych (EULA) - tak samo jak przy zakupie licencji.
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- ========================================== -->
@@ -611,6 +632,27 @@
                 </div>
             </div>
         </section>
+
+        <!-- Pobranie wersji testowej (trial) Prognoser -->
+        <section id="trial-prognoser" class="py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-brand-card p-8 sm:p-10 rounded-3xl border border-brand-prognoserAccent/40 shadow-2xl text-center">
+                    <div class="w-14 h-14 bg-brand-prognoserAccent/10 text-brand-prognoserAccent rounded-2xl flex items-center justify-center mx-auto mb-6 border border-brand-prognoserAccent/20">
+                        <i data-lucide="download" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-3">Pobierz wersję testową Compaginis Prognoser</h3>
+                    <p class="text-brand-muted text-sm sm:text-base leading-relaxed mb-6 max-w-2xl mx-auto">
+                        Przetestuj pełny silnik lingwistyczno-probabilistyczny programu: wersja testowa działa <strong class="text-white">3 dni</strong> od pierwszego uruchomienia i jest przypisana do komputera (HWID). Bez ryzyka - po zakupie licencji możesz aktywować ten sam program kluczem do wersji pełnej.
+                    </p>
+                    <button onclick="openTrialDownloadPrognoser()" class="bg-brand-prognoserAccent hover:bg-brand-prognoserAccentHover text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl shadow-brand-prognoserAccent/25 transition-all inline-flex items-center justify-center gap-2">
+                        Pobierz wersję testową <i data-lucide="download" class="w-5 h-5"></i>
+                    </button>
+                    <p class="text-xs text-brand-muted mt-4">
+                        Przed pobraniem wymagane jest potwierdzenie oświadczeń prawnych (EULA) - tak samo jak przy zakupie licencji.
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- ========================================== -->
@@ -728,7 +770,7 @@
         </div>
     </div>
 
-    <!-- Modal Potwierdzenia Prawnego dla pobrania wersji DEMO -->
+    <!-- Modal Potwierdzenia Prawnego dla pobrania wersji DEMO (Coach) -->
     <div id="demoModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
         <div class="bg-brand-card border border-gray-700 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
             <div class="flex items-center gap-3 mb-4 text-brand-coachAccent">
@@ -762,7 +804,7 @@
         </div>
     </div>
 
-    <!-- Modal Podziękowania za pobranie wersji DEMO -->
+    <!-- Modal Podziękowania za pobranie wersji DEMO (Coach) -->
     <div id="demoThanksModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
         <div class="bg-brand-card border border-brand-coachAccent/50 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl text-center">
             <div class="w-14 h-14 bg-brand-coachAccent/10 text-brand-coachAccent rounded-2xl flex items-center justify-center mx-auto mb-5 border border-brand-coachAccent/20">
@@ -773,6 +815,106 @@
                 Pobieranie wersji demonstracyjnej Compaginis Coach zostało rozpoczęte w nowej karcie. Demo działa <strong class="text-white">3 dni</strong> od pierwszego uruchomienia, na stałych danych demonstracyjnych, a raporty PDF zawierają znak wodny. Po zakupie licencji możesz aktywować ten sam program kluczem do pełnej wersji.
             </p>
             <button onclick="closeDemoThanks()" class="w-full bg-brand-coachAccent hover:bg-brand-coachAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all shadow-lg shadow-brand-coachAccent/20">
+               Zamknij
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal Potwierdzenia Prawnego dla pobrania wersji testowej (Predict) -->
+    <div id="trialModalPredict" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
+        <div class="bg-brand-card border border-gray-700 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
+            <div class="flex items-center gap-3 mb-4 text-brand-accent">
+                <i data-lucide="shield-alert" class="w-8 h-8 shrink-0"></i>
+                <h3 class="text-xl font-bold text-white">Oświadczenie przed pobraniem wersji testowej</h3>
+            </div>
+            <p class="text-sm text-brand-muted mb-6 leading-relaxed">
+                Przed pobraniem wersji testowej Compaginis Predict musisz zapoznać się z warunkami i potwierdzić swoje oświadczenia:
+            </p>
+            <div class="space-y-4 mb-6 text-sm text-brand-text">
+               <label class="flex items-start gap-3 cursor-pointer">
+                   <input type="checkbox" id="trialCheckAgePredict" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-accent focus:ring-brand-accent">
+                   <span>Oświadczam, że mam ukończone <strong>18 lat</strong> i posiadam pełną zdolność do czynności prawnych (§ 1 EULA).</span>
+               </label>
+               <label class="flex items-start gap-3 cursor-pointer">
+                   <input type="checkbox" id="trialCheckDocsPredict" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-accent focus:ring-brand-accent">
+                   <span>Zapoznałem się z całą <a href="dokumentacja.html" target="_blank" class="text-brand-accent underline hover:text-white">Dokumentacją Prawną, Licencyjną i Podręcznikiem</a> oraz akceptuję warunki licencji testowej (EULA).</span>
+               </label>
+            </div>
+            <div id="trialModalErrorPredict" class="text-red-500 text-xs mb-4 hidden font-medium">
+                Musisz zaznaczyć oba oświadczenia, aby pobrać wersję testową.
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3">
+               <button onclick="closeTrialModalPredict()" class="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 rounded-xl text-sm transition-all text-center">
+                   Anuluj
+               </button>
+               <button onclick="proceedToTrialDownloadPredict()" class="flex-1 bg-brand-accent hover:bg-brand-accentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-accent/20">
+                   Pobierz wersję testową <i data-lucide="download" class="w-4 h-4 inline ml-1"></i>
+               </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Podziękowania za pobranie wersji testowej (Predict) -->
+    <div id="trialThanksModalPredict" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
+        <div class="bg-brand-card border border-brand-accent/50 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl text-center">
+            <div class="w-14 h-14 bg-brand-accent/10 text-brand-accent rounded-2xl flex items-center justify-center mx-auto mb-5 border border-brand-accent/20">
+                <i data-lucide="party-popper" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Dziękujemy za pobranie wersji testowej!</h3>
+            <p class="text-sm text-brand-muted leading-relaxed mb-6">
+                Pobieranie wersji testowej Compaginis Predict zostało rozpoczęte w nowej karcie. Wersja testowa działa <strong class="text-white">3 dni</strong> od pierwszego uruchomienia i jest ograniczona do <strong class="text-white">30 wygenerowanych raportów</strong>, a przy pierwszym uruchomieniu zostanie automatycznie przypisana do komputera (HWID). Po zakupie licencji możesz aktywować ten sam program kluczem do pełnej wersji.
+            </p>
+            <button onclick="closeTrialThanksPredict()" class="w-full bg-brand-accent hover:bg-brand-accentHover text-white font-bold py-3 rounded-xl text-sm transition-all shadow-lg shadow-brand-accent/20">
+               Zamknij
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal Potwierdzenia Prawnego dla pobrania wersji testowej (Prognoser) -->
+    <div id="trialModalPrognoser" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
+        <div class="bg-brand-card border border-gray-700 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
+            <div class="flex items-center gap-3 mb-4 text-brand-prognoserAccent">
+                <i data-lucide="shield-alert" class="w-8 h-8 shrink-0"></i>
+                <h3 class="text-xl font-bold text-white">Oświadczenie przed pobraniem wersji testowej</h3>
+            </div>
+            <p class="text-sm text-brand-muted mb-6 leading-relaxed">
+                Przed pobraniem wersji testowej Compaginis Prognoser musisz zapoznać się z warunkami i potwierdzić swoje oświadczenia:
+            </p>
+            <div class="space-y-4 mb-6 text-sm text-brand-text">
+               <label class="flex items-start gap-3 cursor-pointer">
+                   <input type="checkbox" id="trialCheckAgePrognoser" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-prognoserAccent focus:ring-brand-prognoserAccent">
+                   <span>Oświadczam, że mam ukończone <strong>18 lat</strong> i posiadam pełną zdolność do czynności prawnych (§ 1 EULA).</span>
+               </label>
+               <label class="flex items-start gap-3 cursor-pointer">
+                   <input type="checkbox" id="trialCheckDocsPrognoser" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-prognoserAccent focus:ring-brand-prognoserAccent">
+                   <span>Zapoznałem się z całą <a href="dokumentacja.html" target="_blank" class="text-brand-prognoserAccent underline hover:text-white">Dokumentacją Prawną, Licencyjną i Podręcznikiem</a> oraz akceptuję warunki licencji testowej (EULA).</span>
+               </label>
+            </div>
+            <div id="trialModalErrorPrognoser" class="text-red-500 text-xs mb-4 hidden font-medium">
+                Musisz zaznaczyć oba oświadczenia, aby pobrać wersję testową.
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3">
+               <button onclick="closeTrialModalPrognoser()" class="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 rounded-xl text-sm transition-all text-center">
+                   Anuluj
+               </button>
+               <button onclick="proceedToTrialDownloadPrognoser()" class="flex-1 bg-brand-prognoserAccent hover:bg-brand-prognoserAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-prognoserAccent/20">
+                   Pobierz wersję testową <i data-lucide="download" class="w-4 h-4 inline ml-1"></i>
+               </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Podziękowania za pobranie wersji testowej (Prognoser) -->
+    <div id="trialThanksModalPrognoser" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
+        <div class="bg-brand-card border border-brand-prognoserAccent/50 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl text-center">
+            <div class="w-14 h-14 bg-brand-prognoserAccent/10 text-brand-prognoserAccent rounded-2xl flex items-center justify-center mx-auto mb-5 border border-brand-prognoserAccent/20">
+                <i data-lucide="party-popper" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Dziękujemy za pobranie wersji testowej!</h3>
+            <p class="text-sm text-brand-muted leading-relaxed mb-6">
+                Pobieranie wersji testowej Compaginis Prognoser zostało rozpoczęte w nowej karcie. Wersja testowa działa <strong class="text-white">3 dni</strong> od pierwszego uruchomienia, a przy pierwszym uruchomieniu zostanie automatycznie przypisana do komputera (HWID). Po zakupie licencji możesz aktywować ten sam program kluczem do pełnej wersji.
+            </p>
+            <button onclick="closeTrialThanksPrognoser()" class="w-full bg-brand-prognoserAccent hover:bg-brand-prognoserAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all shadow-lg shadow-brand-prognoserAccent/20">
                Zamknij
             </button>
         </div>
@@ -831,6 +973,7 @@
             closeModal();
         }
 
+        // --- Wersja demonstracyjna Compaginis Coach ---
         const demoDownloadUrl = 'https://drive.google.com/file/d/1TqJlNKvIvWn4OQuTRN-ajbK_kyZjwYJZ/view'; // Zastąp docelowym linkiem do pobierania wersji demo
 
         function openDemoDownload() {
@@ -864,6 +1007,78 @@
 
         function closeDemoThanks() {
             document.getElementById('demoThanksModal').classList.add('hidden');
+        }
+
+        // --- Wersja testowa (trial) Compaginis Predict ---
+        const trialDownloadUrlPredict = 'TUTAJ_LINK_TRIAL_PREDICT'; // Zastąp docelowym linkiem do pobierania wersji testowej Predict
+
+        function openTrialDownloadPredict() {
+            document.getElementById('trialCheckAgePredict').checked = false;
+            document.getElementById('trialCheckDocsPredict').checked = false;
+            document.getElementById('trialModalErrorPredict').classList.add('hidden');
+            document.getElementById('trialModalPredict').classList.remove('hidden');
+        }
+
+        function closeTrialModalPredict() {
+            document.getElementById('trialModalPredict').classList.add('hidden');
+        }
+
+        function proceedToTrialDownloadPredict() {
+            const isAgeChecked = document.getElementById('trialCheckAgePredict').checked;
+            const isDocsChecked = document.getElementById('trialCheckDocsPredict').checked;
+
+            if (!isAgeChecked || !isDocsChecked) {
+                document.getElementById('trialModalErrorPredict').classList.remove('hidden');
+                return;
+            }
+
+            closeTrialModalPredict();
+            if (trialDownloadUrlPredict && !trialDownloadUrlPredict.startsWith('TUTAJ_')) {
+                window.open(trialDownloadUrlPredict, '_blank');
+            } else {
+                alert('Link do pobierania wersji testowej Compaginis Predict nie został jeszcze skonfigurowany.');
+            }
+            document.getElementById('trialThanksModalPredict').classList.remove('hidden');
+        }
+
+        function closeTrialThanksPredict() {
+            document.getElementById('trialThanksModalPredict').classList.add('hidden');
+        }
+
+        // --- Wersja testowa (trial) Compaginis Prognoser ---
+        const trialDownloadUrlPrognoser = 'TUTAJ_LINK_TRIAL_PROGNOSER'; // Zastąp docelowym linkiem do pobierania wersji testowej Prognoser
+
+        function openTrialDownloadPrognoser() {
+            document.getElementById('trialCheckAgePrognoser').checked = false;
+            document.getElementById('trialCheckDocsPrognoser').checked = false;
+            document.getElementById('trialModalErrorPrognoser').classList.add('hidden');
+            document.getElementById('trialModalPrognoser').classList.remove('hidden');
+        }
+
+        function closeTrialModalPrognoser() {
+            document.getElementById('trialModalPrognoser').classList.add('hidden');
+        }
+
+        function proceedToTrialDownloadPrognoser() {
+            const isAgeChecked = document.getElementById('trialCheckAgePrognoser').checked;
+            const isDocsChecked = document.getElementById('trialCheckDocsPrognoser').checked;
+
+            if (!isAgeChecked || !isDocsChecked) {
+                document.getElementById('trialModalErrorPrognoser').classList.remove('hidden');
+                return;
+            }
+
+            closeTrialModalPrognoser();
+            if (trialDownloadUrlPrognoser && !trialDownloadUrlPrognoser.startsWith('TUTAJ_')) {
+                window.open(trialDownloadUrlPrognoser, '_blank');
+            } else {
+                alert('Link do pobierania wersji testowej Compaginis Prognoser nie został jeszcze skonfigurowany.');
+            }
+            document.getElementById('trialThanksModalPrognoser').classList.remove('hidden');
+        }
+
+        function closeTrialThanksPrognoser() {
+            document.getElementById('trialThanksModalPrognoser').classList.add('hidden');
         }
 
         lucide.createIcons();
