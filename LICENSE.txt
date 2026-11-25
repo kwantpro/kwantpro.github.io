@@ -1,5 +1,6 @@
 All Rights Reserved Notice
-Copyright (c) 2026 Jaroslaw Wojtasik (Compaginis / Compaginis Predict, Compaginis Coach, Compaginis Prognoser & Compaginis Future)
+Copyright (c) 2026 Jaroslaw Wojtasik (Compaginis / Compaginis Predict, Compaginis Coach, 
+Compaginis Prognoser & Compaginis Future)
 
 Wszelkie prawa zastrzeżone. 
 
@@ -20,5 +21,6 @@ bez wyraźnej, pisemnej zgody autora jest surowo zabronione.
 
 3. Oprogramowanie binarne:
 Samo repozytorium nie zawiera kodu źródłowego ani plików wykonywalnych aplikacji 
-"Compaginis Predict", "Compaginis Coach", "Compaginis Prognoser"oraz "Compaginis Future" (.exe), które stanowią niezależną, 
-zamkniętą własność intelektualną autora i podlegają odrębnym warunkom licencyjnym (EULA).
+"Compaginis Predict", "Compaginis Coach", "Compaginis Prognoser"oraz "Compaginis Future" (.exe), 
+które stanowią niezależną, zamkniętą własność intelektualną autora i podlegają odrębnym warunkom 
+licencyjnym (EULA).
