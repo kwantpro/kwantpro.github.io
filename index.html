@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compaginis - Oprogramowanie Analityczne i Trenerskie w Sporcie</title>
-    <meta name="description" content="Compaginis - oprogramowanie desktopowe do predykcji sportowej (Predict), wsparcia sztabu szkoleniowego (Coach) oraz prognozowania sportowego (Prognoser).">
+    <title>Compaginis - Oprogramowanie Analityczne, Trenerskie i Prognostyczne w Sporcie</title>
+    <meta name="description" content="Compaginis - oprogramowanie desktopowe do predykcji sportowej (Predict), wsparcia sztabu szkoleniowego (Coach) prognozowania sportowego (Prognoser) oraz trenersko analityczne prognozowania całych rozgrywek ligowych i pucharowych (Future).">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,6 +20,8 @@
                             coachAccentHover: '#0284C7',
                             prognoserAccent: '#34D399',
                             prognoserAccentHover: '#059669',
+                            futureAccent: '#A78BFA',
+                            futureAccentHover: '#7C3AED',
                             text: '#F3F4F6',
                             muted: '#9CA3AF'
                         }
@@ -46,6 +48,7 @@
                 <a href="#predict" class="hover:text-brand-accent transition-colors">Compaginis Predict</a>
                 <a href="#coach" class="hover:text-brand-coachAccent transition-colors">Compaginis Coach</a>
                 <a href="#prognoser" class="hover:text-brand-prognoserAccent transition-colors">Compaginis Prognoser</a>
+                <a href="#future" class="hover:text-brand-futureAccent transition-colors">Compaginis Future</a>
                 <a href="#wymagania" class="hover:text-brand-accent transition-colors">Wymagania</a>
             </div>
             <div>
@@ -67,7 +70,7 @@
             analityka, sztab szkoleniowy i prognozy w Twoim <span class="text-brand-accent">komputerze</span>
         </h1>
         <p class="text-lg sm:text-xl text-brand-muted max-w-3xl mx-auto mb-10 leading-relaxed">
-            Wybierz dedykowane narzędzia Compaginis: numeryczny system predykcji wyników sportowych <strong>Predict</strong>, profesjonalny system wsparcia taktycznego dla trenera <strong>Coach</strong> lub system prognozowania sportowego oparty na analizie lingwistyczno-probabilistycznej <strong>Prognoser</strong>.
+            Wybierz dedykowane narzędzia Compaginis: numeryczny system predykcji wyników sportowych <strong>Predict</strong>, profesjonalny system wsparcia taktycznego dla trenera <strong>Coach</strong>, system prognozowania sportowego oparty na analizie lingwistyczno-probabilistycznej <strong>Prognoser</strong> lub system prognozowania lig i pucharów <strong>Future</strong>.
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
             <a href="#predict" class="bg-brand-accent hover:bg-brand-accentHover text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl shadow-brand-accent/25 transition-all flex items-center justify-center gap-2">
@@ -79,17 +82,19 @@
             <a href="#prognoser" class="bg-brand-card hover:bg-gray-800 border border-brand-prognoserAccent/50 text-brand-prognoserAccent font-semibold px-8 py-4 rounded-xl text-lg transition-all flex items-center justify-center gap-2">
                 Compaginis Prognoser <i data-lucide="newspaper" class="w-5 h-5"></i>
             </a>
+            <a href="#future" class="bg-brand-card hover:bg-gray-800 border border-brand-futureAccent/50 text-brand-futureAccent font-semibold px-8 py-4 rounded-xl text-lg transition-all flex items-center justify-center gap-2">
+                Compaginis Future <i data-lucide="trending-up" class="w-5 h-5"></i>
+            </a>
         </div>
     </section>
-
     <!-- Wybór Produktów (Zakładki / Kafelki ogólne) -->
     <section id="produkty" class="py-16 bg-brand-dark/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold">Poznaj ekosystem oprogramowania</h2>
-                <p class="text-brand-muted mt-2">Trzy programy desktopowe skrojone pod potrzeby.</p>
+                <p class="text-brand-muted mt-2">Cztery programy desktopowe skrojone pod potrzeby.</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Kafel Predict -->
                 <div class="bg-brand-card p-8 rounded-3xl border border-gray-800 flex flex-col justify-between hover:border-brand-accent/50 transition-all">
                     <div>
@@ -150,6 +155,26 @@ Automatyzacja analizy danych informacyjnych dla osób, które chcą otrzymać op
                     </div>
                     <a href="#prognoser" class="w-full bg-brand-prognoserAccent hover:bg-brand-prognoserAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center">
                         Przejdź do Compaginis Prognoser
+                    </a>
+                </div>
+                <!-- Kafel Future -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-gray-800 flex flex-col justify-between hover:border-brand-futureAccent/50 transition-all">
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-brand-futureAccent/10 text-brand-futureAccent rounded-xl flex items-center justify-center border border-brand-futureAccent/20">
+                                <i data-lucide="trending-up" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Compaginis Future</h3>
+                                <p class="text-xs text-brand-futureAccent font-semibold uppercase tracking-wider">Prognozowanie Lig i Pucharów</p>
+                            </div>
+                        </div>
+                        <p class="text-brand-muted text-sm leading-relaxed mb-6">
+                            Dedykowana aplikacja desktopowa dla trenerów i analityków prowadzących rozgrywki ligowe oraz pucharowe (faza grupowa + drabinka pucharowa, w tym turnieje rangi mistrzostw świata czy kontynentu). Tabela futurystyczna, przewidywanie osiągnięcia najlepszego możliwego miejsca oraz pełny rozkład prawdopodobieństw dla każdego miejsca i meczu.
+                        </p>
+                    </div>
+                    <a href="#future" class="w-full bg-brand-futureAccent hover:bg-brand-futureAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center">
+                        Przejdź do Compaginis Future
                     </a>
                 </div>
             </div>
@@ -403,7 +428,6 @@ Automatyzacja analizy danych informacyjnych dla osób, które chcą otrzymać op
                 </div>
             </div>
         </section>
-
         <!-- Cennik Coach (Półroczna i Roczna) -->
         <section class="py-16 bg-brand-dark/50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -454,7 +478,6 @@ Automatyzacja analizy danych informacyjnych dla osób, które chcą otrzymać op
                 </div>
             </div>
         </section>
-
         <!-- Pobranie wersji demonstracyjnej Coach -->
         <section id="demo" class="py-16">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -494,7 +517,6 @@ Automatyzacja analizy danych informacyjnych dla osób, które chcą otrzymać op
                 <strong>Compaginis Prognoser</strong> to desktopowe narzędzie analityczno-prognostyczne. Analizuje językowo publicznie dostępne otwarte dane informacyjne o rywalizacji autorskim, deterministycznym silnikiem lingwistyczno -probabilistycznym i formułuje słowny raport z prognozą procentową wyniku oraz wskaźnikiem napięcia przedmeczowego - w całości na urządzeniu użytkownika i tak jak wszystkie produkty marki Compaginis bez wykorzystania sztucznej inteligencji (AI) ani sieci neuronowych.
             </p>
         </section>
-
         <!-- Panel i Możliwości Prognoser -->
         <section class="py-16 bg-brand-dark/50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -535,7 +557,6 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
                 </div>
             </div>
         </section>
-
         <!-- Jak to działa (Prognoser) -->
         <section class="py-12">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -635,7 +656,6 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
                 </div>
             </div>
         </section>
-
         <!-- Pobranie wersji testowej (trial) Prognoser -->
         <section id="trial-prognoser" class="py-16">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -649,6 +669,156 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
                     </p>
                     <button onclick="openTrialDownloadPrognoser()" class="bg-brand-prognoserAccent hover:bg-brand-prognoserAccentHover text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl shadow-brand-prognoserAccent/25 transition-all inline-flex items-center justify-center gap-2">
                         Pobierz wersję testową <i data-lucide="download" class="w-5 h-5"></i>
+                    </button>
+                    <p class="text-xs text-brand-muted mt-4">
+                        Przed pobraniem wymagane jest potwierdzenie oświadczeń prawnych (EULA) - tak samo jak przy zakupie licencji.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SEKCJA 4: COMPAGINIS FUTURE                -->
+    <!-- ========================================== -->
+    <div id="future">
+        <!-- Sekcja Główna Future -->
+        <section class="pt-20 pb-12 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-futureAccent/30 bg-brand-futureAccent/10 text-brand-futureAccent text-xs font-semibold tracking-wide uppercase mb-4">
+                <i data-lucide="trending-up" class="w-4 h-4"></i>
+                Produkt 4: Compaginis Future
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-black tracking-tight mb-4">
+                prognozowanie lig i pucharów przez cały <span class="text-brand-futureAccent">sezon</span>
+            </h2>
+            <p class="text-base sm:text-lg text-brand-muted max-w-3xl mx-auto">
+                <strong>Compaginis Future</strong> to desktopowe narzędzie dla trenerów i analityków prowadzących rozgrywki ligowe (system mecz i rewanż) oraz pucharowe (faza grupowa + drabinka pucharowa) - w tym turnieje rangi mistrzostw świata czy mistrzostw kontynentu. Na podstawie wprowadzanych na bieżąco wyników program buduje własny, samouczący się model siły drużyn i przelicza prognozowaną tabelę końcową, przewiduje najlepsze możliwe miejsce w tabeli oraz pełny rozkład szans w procentach.
+            </p>
+        </section>
+
+        <!-- Panel i Możliwości Future -->
+        <section class="py-16 bg-brand-dark/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold">Możliwości i Architektura Prognostyczna (Future)</h3>
+                    <p class="text-brand-muted mt-2">Tabela futurystyczna, Rekomendacje oraz pełny rozkład Prawdopodobieństw - w jednym programie.</p>
+                </div>
+                <div class="mb-14 max-w-4xl mx-auto">
+                    <div class="bg-brand-card p-3 sm:p-5 rounded-3xl border border-gray-800 shadow-2xl">
+                        <img src="panel-future.png" alt="Zakładka Prawdopodobieństwa w Compaginis Future" class="rounded-2xl w-full h-auto border border-gray-700">
+                        <p class="text-center text-xs sm:text-sm text-brand-muted mt-4">
+                            <strong>Zakładka Prawdopodobieństwa w Compaginis Future:</strong> pełny rozkład szans na każde miejsce w tabeli oraz prognoza wyniku każdego pozostałego meczu.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-futureAccent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-futureAccent/10 text-brand-futureAccent rounded-xl flex items-center justify-center mb-4"><i data-lucide="table" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Tabela Futurystyczna</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Prognoza tabeli końcowej sezonu: mecze już rozegrane liczą się tak, jak się odbyły, a pozostałe są domykane najbardziej prawdopodobnym wynikiem według bieżącego modelu siły drużyn. Przelicza się automatycznie po każdej zmianie wyniku.</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-futureAccent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-futureAccent/10 text-brand-futureAccent rounded-xl flex items-center justify-center mb-4"><i data-lucide="target" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Rekomendacje i przewidywanie: Najlepsze Możliwe Miejsce</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Wyznacza teoretyczne maksimum (najbardziej optymistyczny, ale wciąż matematycznie możliwy układ pozostałych wyników) wraz z podpowiedzią, jakie wyniki własnych meczów są do tego potrzebne, oraz osobną, realistyczną prognozę miejsca w tabeli.</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-futureAccent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-futureAccent/10 text-brand-futureAccent rounded-xl flex items-center justify-center mb-4"><i data-lucide="percent" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Prawdopodobieństwa</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Tysiące losowych rozegrań pozostałej części sezonu według bieżącej siły drużyn dają pełny rozkład szans w procentach na każde miejsce w tabeli oraz na wynik każdego pojedynczego, jeszcze nierozegranego meczu.</p>
+                    </div>
+                    <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 hover:border-brand-futureAccent/50 transition-all">
+                        <div class="w-10 h-10 bg-brand-futureAccent/10 text-brand-futureAccent rounded-xl flex items-center justify-center mb-4"><i data-lucide="trophy" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold mb-2">Puchar: Grupy i Drabinka</h4>
+                        <p class="text-brand-muted text-sm leading-relaxed">Faza grupowa z automatycznym rozstawieniem oraz drabinka pucharowa (mecz pojedynczy lub dwumecz z zasadą bramek na wyjeździe), z prognozą przebiegu aż do finału - format, który można wykorzystać też do dowolnego turnieju rangi mistrzostw świata czy kontynentu. Eksport zbiorczy wszystkich zakładek do PDF i TXT.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cennik Future (3 warianty) -->
+        <section class="py-16 bg-brand-dark/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-3xl font-bold mb-3">Warianty licencji Compaginis Future</h3>
+                <p class="text-brand-muted mb-10 text-sm">Wybierz okres subskrypcji systemu prognozowania lig i pucharów Compaginis Future.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- 1 Miesiąc -->
+                    <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Licencja 1 Miesiąc</h4>
+                            <p class="text-brand-muted text-sm mb-6">Elastyczny dostęp na 30 dni</p>
+                            <div class="my-6">
+                                <span class="text-4xl font-black">119</span>
+                                <span class="text-brand-muted text-sm"> PLN / mies.</span>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-futureAccent w-4 h-4"></i> Pełen silnik prognozowania lig i pucharów</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-futureAccent w-4 h-4"></i> Tabela futurystyczna, Rekomendacje oraz Prawdopodobieństwa</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-futureAccent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCheckout('future-1m', 'Compaginis Future - Licencja 1 Miesiąc', 'TUTAJ_LINK_PLATNOSCI_FUTURE_1M')" class="block w-full bg-gray-800 hover:bg-brand-futureAccent text-white font-bold py-3 rounded-xl text-sm transition-all text-center cursor-pointer">
+                            Wybierz 1 Miesiąc
+                        </button>
+                    </div>
+                    <!-- 3 Miesiące (Najczęściej wybierany) -->
+                    <div class="bg-brand-card border-2 border-brand-futureAccent rounded-3xl p-8 relative flex flex-col justify-between shadow-xl">
+                        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-futureAccent text-white px-3 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                            Najczęściej wybierany
+                        </span>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Licencja 3 Miesiące</h4>
+                            <p class="text-brand-muted text-sm mb-6">Dostęp kwartalny</p>
+                            <div class="my-6">
+                                <span class="text-4xl font-black">299</span>
+                                <span class="text-brand-muted text-sm"> PLN / kwartał</span>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-futureAccent w-4 h-4"></i> Pełen silnik prognozowania lig i pucharów</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-futureAccent w-4 h-4"></i> Tabela futurystyczna, Rekomendacje oraz Prawdopodobieństwa</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-futureAccent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCheckout('future-3m', 'Compaginis Future - Licencja 3 Miesiące', 'TUTAJ_LINK_PLATNOSCI_FUTURE_3M')" class="block w-full bg-brand-futureAccent hover:bg-brand-futureAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-futureAccent/20 cursor-pointer">
+                            Wybierz 3 Miesiące
+                        </button>
+                    </div>
+                    <!-- 6 Miesięcy -->
+                    <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 relative flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Licencja 6 Miesięcy</h4>
+                            <p class="text-brand-muted text-sm mb-6">Dostęp półroczny</p>
+                            <div class="my-6">
+                                <span class="text-4xl font-black">549</span>
+                                <span class="text-brand-muted text-sm"> PLN / 6 mies.</span>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-brand-muted">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-futureAccent w-4 h-4"></i> Pełen silnik prognozowania lig i pucharów</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-futureAccent w-4 h-4"></i> Tabela futurystyczna, Rekomendacje oraz Prawdopodobieństwa</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-futureAccent w-4 h-4"></i> Licencja 1-stanowiskowa (HWID)</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCheckout('future-6m', 'Compaginis Future - Licencja 6 Miesięcy', 'TUTAJ_LINK_PLATNOSCI_FUTURE_6M')" class="block w-full bg-gray-800 hover:bg-brand-futureAccent text-white font-bold py-3 rounded-xl text-sm transition-all text-center cursor-pointer">
+                            Wybierz 6 Miesięcy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pobranie wersji demonstracyjnej Future -->
+        <section id="demo-future" class="py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-brand-card p-8 sm:p-10 rounded-3xl border border-brand-futureAccent/40 shadow-2xl text-center">
+                    <div class="w-14 h-14 bg-brand-futureAccent/10 text-brand-futureAccent rounded-2xl flex items-center justify-center mx-auto mb-6 border border-brand-futureAccent/20">
+                        <i data-lucide="download" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-3">Pobierz wersję demonstracyjną Compaginis Future</h3>
+                    <p class="text-brand-muted text-sm sm:text-base leading-relaxed mb-6 max-w-2xl mx-auto">
+                        Przetestuj Tabelę futurystyczną, Rekomendacje oraz Prawdopodobieństwa na przykładowych, fikcyjnych rozgrywkach demonstracyjnych: ograniczona liczba drużyn, a raporty PDF/TXT zawierają znak wodny. Demo działa <strong class="text-white">3 dni</strong> od pierwszego uruchomienia i jest przypisane do komputera (HWID). Bez ryzyka - po zakupie licencji możesz aktywować ten sam program kluczem do wersji pełnej.
+                    </p>
+                    <button onclick="openDemoDownloadFuture()" class="bg-brand-futureAccent hover:bg-brand-futureAccentHover text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl shadow-brand-futureAccent/25 transition-all inline-flex items-center justify-center gap-2">
+                        Pobierz wersję DEMO <i data-lucide="download" class="w-5 h-5"></i>
                     </button>
                     <p class="text-xs text-brand-muted mt-4">
                         Przed pobraniem wymagane jest potwierdzenie oświadczeń prawnych (EULA) - tak samo jak przy zakupie licencji.
@@ -772,7 +942,6 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
             </div>
         </div>
     </div>
-
     <!-- Modal Potwierdzenia Prawnego dla pobrania wersji DEMO (Coach) -->
     <div id="demoModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
         <div class="bg-brand-card border border-gray-700 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
@@ -806,7 +975,6 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
             </div>
         </div>
     </div>
-
     <!-- Modal Podziękowania za pobranie wersji DEMO (Coach) -->
     <div id="demoThanksModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
         <div class="bg-brand-card border border-brand-coachAccent/50 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl text-center">
@@ -822,7 +990,6 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
             </button>
         </div>
     </div>
-
     <!-- Modal Potwierdzenia Prawnego dla pobrania wersji testowej (Predict) -->
     <div id="trialModalPredict" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
         <div class="bg-brand-card border border-gray-700 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
@@ -856,7 +1023,6 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
             </div>
         </div>
     </div>
-
     <!-- Modal Podziękowania za pobranie wersji testowej (Predict) -->
     <div id="trialThanksModalPredict" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
         <div class="bg-brand-card border border-brand-accent/50 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl text-center">
@@ -872,7 +1038,6 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
             </button>
         </div>
     </div>
-
     <!-- Modal Potwierdzenia Prawnego dla pobrania wersji testowej (Prognoser) -->
     <div id="trialModalPrognoser" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
         <div class="bg-brand-card border border-gray-700 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
@@ -906,7 +1071,6 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
             </div>
         </div>
     </div>
-
     <!-- Modal Podziękowania za pobranie wersji testowej (Prognoser) -->
     <div id="trialThanksModalPrognoser" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
         <div class="bg-brand-card border border-brand-prognoserAccent/50 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl text-center">
@@ -922,14 +1086,60 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
             </button>
         </div>
     </div>
-
+    <!-- Modal Potwierdzenia Prawnego dla pobrania wersji DEMO (Future) -->
+    <div id="demoModalFuture" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
+        <div class="bg-brand-card border border-gray-700 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
+            <div class="flex items-center gap-3 mb-4 text-brand-futureAccent">
+                <i data-lucide="shield-alert" class="w-8 h-8 shrink-0"></i>
+                <h3 class="text-xl font-bold text-white">Oświadczenie przed pobraniem wersji DEMO</h3>
+            </div>
+            <p class="text-sm text-brand-muted mb-6 leading-relaxed">
+                Przed pobraniem wersji demonstracyjnej Compaginis Future musisz zapoznać się z warunkami i potwierdzić swoje oświadczenia:
+            </p>
+            <div class="space-y-4 mb-6 text-sm text-brand-text">
+               <label class="flex items-start gap-3 cursor-pointer">
+                   <input type="checkbox" id="demoCheckAgeFuture" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-futureAccent focus:ring-brand-futureAccent">
+                   <span>Oświadczam, że mam ukończone <strong>18 lat</strong> i posiadam pełną zdolność do czynności prawnych (§ 1 EULA).</span>
+               </label>
+               <label class="flex items-start gap-3 cursor-pointer">
+                   <input type="checkbox" id="demoCheckDocsFuture" class="mt-1 w-4 h-4 rounded border-gray-700 bg-brand-dark text-brand-futureAccent focus:ring-brand-futureAccent">
+                   <span>Zapoznałem się z całą <a href="dokumentacja.html" target="_blank" class="text-brand-futureAccent underline hover:text-white">Dokumentacją Prawną, Licencyjną i Podręcznikiem</a> oraz akceptuję warunki licencji demonstracyjnej (EULA).</span>
+               </label>
+            </div>
+            <div id="demoModalErrorFuture" class="text-red-500 text-xs mb-4 hidden font-medium">
+                Musisz zaznaczyć oba oświadczenia, aby pobrać wersję demonstracyjną.
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3">
+               <button onclick="closeDemoModalFuture()" class="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 rounded-xl text-sm transition-all text-center">
+                   Anuluj
+               </button>
+               <button onclick="proceedToDemoDownloadFuture()" class="flex-1 bg-brand-futureAccent hover:bg-brand-futureAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-brand-futureAccent/20">
+                   Pobierz wersję DEMO <i data-lucide="download" class="w-4 h-4 inline ml-1"></i>
+               </button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Podziekowania za pobranie wersji DEMO (Future) -->
+    <div id="demoThanksModalFuture" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
+        <div class="bg-brand-card border border-brand-futureAccent/50 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl text-center">
+            <div class="w-14 h-14 bg-brand-futureAccent/10 text-brand-futureAccent rounded-2xl flex items-center justify-center mx-auto mb-5 border border-brand-futureAccent/20">
+                <i data-lucide="party-popper" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Dziękujemy za pobranie wersji demonstracyjnej!</h3>
+            <p class="text-sm text-brand-muted leading-relaxed mb-6">
+                Pobieranie wersji demonstracyjnej Compaginis Future zostało rozpoczęte w nowej karcie. Demo działa <strong class="text-white">3 dni</strong> od pierwszego uruchomienia, na ograniczonej liczbie drużyn, a raporty PDF/TXT zawierają znak wodny. Po zakupie licencji możesz aktywować ten sam program kluczem do pełnej wersji.
+            </p>
+            <button onclick="closeDemoThanksFuture()" class="w-full bg-brand-futureAccent hover:bg-brand-futureAccentHover text-white font-bold py-3 rounded-xl text-sm transition-all shadow-lg shadow-brand-futureAccent/20">
+               Zamknij
+            </button>
+        </div>
+    </div>
     <!-- Stopka -->
     <footer class="py-8 bg-brand-dark text-xs text-brand-muted text-center">
         <div class="max-w-7xl mx-auto px-4">
-           <p>&copy; 2026 Compaginis - Compaginis Predict, Compaginis Coach & Compaginis Prognoser (compaginis.pl). Wszelkie prawa zastrzeżone. Produkty przeznaczone wyłącznie dla osób pełnoletnich (18+).</p>
+           <p>&copy; 2026 Compaginis - Compaginis Predict, Compaginis Coach, Compaginis Prognoser &amp; Compaginis Future (compaginis.pl). Wszelkie prawa zastrzeżone. Produkty przeznaczone wyłącznie dla osób pełnoletnich (18+).</p>
         </div>
     </footer>
-
     <!-- Skrypty logiki modalu oraz ikony -->
     <script>
         let targetCheckoutUrl = '';
@@ -964,10 +1174,8 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
             }
             closeModal();
         }
-
         // --- Wersja demonstracyjna Compaginis Coach ---
         const demoDownloadUrl = 'https://drive.google.com/file/d/1TqJlNKvIvWn4OQuTRN-ajbK_kyZjwYJZ/view'; // Zastąp docelowym linkiem do pobierania wersji demo
-
         function openDemoDownload() {
             document.getElementById('demoCheckAge').checked = false;
             document.getElementById('demoCheckDocs').checked = false;
@@ -1003,7 +1211,6 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
 
         // --- Wersja testowa (trial) Compaginis Predict ---
         const trialDownloadUrlPredict = 'https://drive.google.com/file/d/139mBVeQ1RLVmVLcZQQZTNuYJFOZukK-_/view'; // Zastąp docelowym linkiem do pobierania wersji testowej Predict
-
         function openTrialDownloadPredict() {
             document.getElementById('trialCheckAgePredict').checked = false;
             document.getElementById('trialCheckDocsPredict').checked = false;
@@ -1039,7 +1246,6 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
 
         // --- Wersja testowa (trial) Compaginis Prognoser ---
         const trialDownloadUrlPrognoser = 'https://drive.google.com/file/d/1fBI4G9LTUwuCneS98xpynIQyFKNkkkz4/view'; // Zastąp docelowym linkiem do pobierania wersji testowej Prognoser
-
         function openTrialDownloadPrognoser() {
             document.getElementById('trialCheckAgePrognoser').checked = false;
             document.getElementById('trialCheckDocsPrognoser').checked = false;
@@ -1071,6 +1277,41 @@ Prognoser posiada opcjonalnie funkcję kalibracji prawdopodobieństwa, która je
 
         function closeTrialThanksPrognoser() {
             document.getElementById('trialThanksModalPrognoser').classList.add('hidden');
+        }
+
+        // --- Wersja demonstracyjna Compaginis Future ---
+        const demoDownloadUrlFuture = 'TUTAJ_LINK_DO_POBRANIA_DEMO_FUTURE'; // Zastąp docelowym linkiem do pobierania wersji demo Future
+        function openDemoDownloadFuture() {
+            document.getElementById('demoCheckAgeFuture').checked = false;
+            document.getElementById('demoCheckDocsFuture').checked = false;
+            document.getElementById('demoModalErrorFuture').classList.add('hidden');
+            document.getElementById('demoModalFuture').classList.remove('hidden');
+        }
+
+        function closeDemoModalFuture() {
+            document.getElementById('demoModalFuture').classList.add('hidden');
+        }
+
+        function proceedToDemoDownloadFuture() {
+            const isAgeChecked = document.getElementById('demoCheckAgeFuture').checked;
+            const isDocsChecked = document.getElementById('demoCheckDocsFuture').checked;
+
+            if (!isAgeChecked || !isDocsChecked) {
+                document.getElementById('demoModalErrorFuture').classList.remove('hidden');
+                return;
+            }
+
+            closeDemoModalFuture();
+            if (demoDownloadUrlFuture && !demoDownloadUrlFuture.startsWith('TUTAJ_')) {
+                window.open(demoDownloadUrlFuture, '_blank');
+            } else {
+                alert('Link do pobierania wersji demonstracyjnej Compaginis Future nie został jeszcze skonfigurowany.');
+            }
+            document.getElementById('demoThanksModalFuture').classList.remove('hidden');
+        }
+
+        function closeDemoThanksFuture() {
+            document.getElementById('demoThanksModalFuture').classList.add('hidden');
         }
 
         lucide.createIcons();
